@@ -12,6 +12,11 @@ root {
 
 body {
   background-color: #1a1a1a;
+  height:1200px;
+}
+
+#sl-navbar {
+  margin-top: 15px;
 }
 
 #sl-background {
@@ -20,8 +25,26 @@ body {
   width:100%;
 }
 
+#product {
+  background-color: rgba(238,238,238,0.7);
+}
+
+#team {
+  background-color: rgba(238,238,238,0.7);
+}
+
+#contact {
+  background-color: rgba(238,238,238,0.7);
+  padding: 10px;
+  height:100px;
+}
+
 div.sl-avatar {
-  background-color: #eeeeee;
+
+}
+
+li.sl-avatar {
+  width:260px;
 }
 
 img.sl-avatar {

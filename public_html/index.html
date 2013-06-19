@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
       body {
-        padding-top: 60px;
+        padding-top: 93px;
         padding-bottom: 40px;
       }
     </style>
@@ -31,14 +31,16 @@
     <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
 
     <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="brand" href="#">Streamlyne</a>
+      <div class="navbar-inner" style="height:78px;">
+        <div 
+          id="sl-navbar"
+          class="container">
+          <a class="brand" onclick="animateTo('top');">Streamlyne</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="#product">Product</a></li>
-              <li><a href="#team">Team</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a onclick="animateTo('top');">Product</a></li>
+              <li><a onclick="animateTo('#team');">Team</a></li>
+              <li><a onclick="animateTo('#contact');">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -47,60 +49,104 @@
 
     <div class="container">
 
-      <!-- Main hero unit for a primary marketing message or call to action -->
+      <!-- Main panel -->
       <div 
         id="product"
-        class="hero-unit">
-        <h1>Streamlyne</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-      </div>
+        class="container-fluid">
 
-      <div class="row">
-        <h2>First Team View</h2>
+        <div class="span6">
+          <div class="page-header">
+            <h1>Streamlyne</h1>
+          </div>
+          <h4>A modern manufacturing tool.</h4>
+        </div>
+
+        <div class="span4">
+          <form class="form-horizontal">
+            <fieldset>
+
+              <!-- Form Name -->
+              <h3>Apply for Beta!</h3>
+
+              <div class="control-group">
+                <!-- Name input-->
+                <label class="control-label" for="textinput">Name</label>
+                <div class="controls">
+                  <input id="textinput" name="textinput" type="text" placeholder="First Last" class="input-xlarge">
+                </div>
+
+                <!-- Organization input-->
+                <label class="control-label" for="textinput">Organization</label>
+                <div class="controls">
+                  <input id="textinput" name="textinput" type="text" placeholder="Newco Inc." class="input-xlarge">
+                </div>
+
+                <!-- Email input-->
+                <label class="control-label" for="textinput">Email</label>
+                <div class="controls">
+                  <input id="textinput" name="textinput" type="text" placeholder="user123@example.com" class="input-xlarge">
+                </div>
+              </div>
+
+              <!-- Button -->
+              <div class="controls">
+                <button id="singlebutton" name="singlebutton" class="btn btn-primary">Apply!</button>
+              </div>
+
+            </fieldset>
+          </form>
+        </div>
+
       </div>
 
       <hr>
-      
-      <!-- Example row of columns -->
+
+      <!-- Team view -->
       <div 
-        id="team" 
-        class="row-fluid">
-        <h2>Second Team View</h2>
+        id="team"
+        class="container-fluid text-center">
+
+        <h2>The Team</h2>
+
         <ul class="thumbnails">
-          <li class="span3">
-            <div class="thumbnail sl-avatar">
-              <img class="sl-avatar" src="img/shaggy.png"/>
+          <li class="span3 sl-avatar">
+            <div class="thumbnail">
+              <img class="" src="img/shaggy.png"/>
               <h3 class="sl-avatar">Todd Murphy</h3>
             </div>
           </li>
-          <li class="span3">
-            <div class="thumbnail sl-avatar">
-              <img class="sl-avatar" src="img/shaggy.png"/>
+          <li class="span3 sl-avatar">
+            <div class="thumbnail">
+              <img class="" src="img/shaggy.png"/>
               <h3 class="sl-avatar">Dawson Reid</h3>
             </div>
           </li>
-          <li class="span3">
-            <div class="thumbnail sl-avatar">
-              <img class="sl-avatar" src="img/shaggy.png"/>
+          <li class="span3 sl-avatar">
+            <div class="thumbnail">
+              <img class="" src="img/shaggy.png"/>
               <h3 class="sl-avatar">Glavin Wiechert</h3>
             </div>
           </li>
-          <li class="span3">
-            <div class="thumbnail sl-avatar" >
-              <img class="sl-avatar" src="img/shaggy.png"/>
+          <li class="span3 sl-avatar">
+            <div class="thumbnail" >
+              <img class="" src="img/shaggy.png"/>
               <h3 class="sl-avatar">Neil Cody</h3>
             </div>
           </li>
         </ul>
+
       </div>
 
       <hr>
 
-      <footer>
+      <!-- Footer -->
+      <div 
+        id="contact"
+        class="container-fluid text-center">
+        
         <p>&copy; Streamlyne 2012</p>
-      </footer>
-
-      <div id="sl-footer"></div>
+        
+      </div>
     </div> <!-- /container -->
 
     <img id="sl-background" src="img/background.jpg"/>
