@@ -55,3 +55,7 @@ img.sl-avatar {
 h3.sl-avatar {
   margin-left: 20px;
 }
+
+a.sl-pointer {
+  cursor: pointer;
+}
