@@ -56,7 +56,7 @@ p {
 }
 
 p.lead {
-  color: #ff755a;
+  color: #5cceee;
 }
 
 a {
@@ -70,7 +70,7 @@ a:hover {
 }
 
 .btn-main {
-	  background: #ff755a repeat scroll 0 0;
+	  background: #5cceee repeat scroll 0 0;
     border: none;
     font-weight: 800;
     border-radius: 2px;
@@ -105,11 +105,11 @@ a:hover {
 }
 
 ::selection {
-	background: #ff755a; /* Safari */
+	background: #5cceee; /* Safari */
 	color: #FFFFFF;
 }
 ::-moz-selection {
-	background: #ff755a; /* Firefox */
+	background: #5cceee; /* Firefox */
 	color: #FFFFFF;
 }
 
@@ -182,7 +182,7 @@ a:hover {
   color: #FFFFFF;
 }
 .orange {
-  color: #ff755a;
+  color: #5cceee;
 }
 
 
@@ -191,14 +191,14 @@ a:hover {
    ========================================================================== */
 
 .navbar-inverse .navbar-inner {
-  background: #ff755a;
+  background: #5cceee;
   background-repeat: repeat-x;
-  border-color: #ff755a;
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff755a', endColorstr='#ff755a', GradientType=0)
+  border-color: #5cceee;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cceee', endColorstr='#5cceee', GradientType=0)
 }
 
 .nav-collapse, .nav-collapse.collapse {
-    background: none repeat scroll 0 0 #ff755a;
+    background: none repeat scroll 0 0 #5cceee;
     height: 0;
     overflow: hidden;
 }
@@ -294,7 +294,7 @@ a:hover {
     background-image: none;
     background-image: -webkit-linear-gradient(linear, 0% 0%, 0% 100%, from(transparent), to(transparent));
     background-repeat: no-repeat;
-    color: #ff755a;
+    color: #5cceee;
     text-decoration: none;
 }
 
@@ -470,7 +470,7 @@ a:hover {
 }
 
 .side-links li a {
-  color: #ff755a;
+  color: #5cceee;
   font-weight: 600;
 }
 
@@ -623,7 +623,7 @@ a:hover {
 }
 
 .team-info {
-  background: #ff755a;
+  background: #5cceee;
   padding: 10px 10px 10px 10px;
   height: 60px;
 }
@@ -677,7 +677,7 @@ a:hover {
 
 
 .headline {
-  background: #ff755a;
+  background: #5cceee;
   padding: 6px 6px 0px 6px;
   background-size: contain;
   position: relative;
@@ -696,7 +696,7 @@ bottom: -15px;
 left: 44%;
 border-style: solid;
 border-width: 15px 15px 0;
-border-color: #ff755a transparent;
+border-color: #5cceee transparent;
 display: block;
 z-index: 1;
 }
@@ -980,7 +980,7 @@ ul.icons li {
 }
 
 .testimonial-source {
-  background: #ff755a;
+  background: #5cceee;
   text-align: center;
   padding: 12px 14px;
   color: #FFFFFF;
@@ -1105,7 +1105,7 @@ ul#twitter_update_list li {
 }
 
 #bottom p a:hover {
-  color: #ff755a;
+  color: #5cceee;
 	text-decoration: none;
 }
 
@@ -1128,7 +1128,7 @@ ul.social-icons li {
 }
 
 ul.social-icons li a {
-	color: #ff755a;
+	color: #5cceee;
 	text-decoration: none;
 }
 
