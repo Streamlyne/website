@@ -1,14 +1,13 @@
 
-window.onload = function(event) {
-  $('#sl-background').css('top', $('.navbar').css('height'));
-};
+//Scroll Animation for About
+$(function() {
+    //caches a jQuery object containing the header element
+    var animate = $("#progress");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
 
-var animateTo = function(selector) {
-  var position;
-  if (selector === 'top') {
-    position = 0;
-  } else {
-    position = $(selector).offset().top - 95;
-  }
-  $('html, body').animate({scrollTop: position }, 1000);
-}
+        if (scroll >= 825) {
+            animate.removeClass('display-none').addClass("display");
+        } 
+    });
+});
