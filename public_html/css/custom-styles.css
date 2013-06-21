@@ -4,3 +4,10 @@
    ========================================================================== */ 
 
 
+#sl-overlay {
+  position:absolute;
+  top:0px;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.45);
+  width:100%;
+}
