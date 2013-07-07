@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width">
 
     <link rel="icon" href="img/cube_molecule.ico" type="image/x-icon"/>
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -26,6 +26,24 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="/favicon.png">
+
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-42138806-1', 'streamlyne.co');
+      ga('send', 'pageview');
+
+    </script>
   </head>
 
   <body>
@@ -147,7 +165,7 @@
         <div class="row-fluid">
 
           <!--News Article-->
-          <div class="span3 text-center latest-article">
+          <div class="span3 text-center latest-article sl-news-article">
             <img src="img/ipad-mini.jpg" alt="Title">
             <p>
               <b>iOS Mobile platform</b><br/>
@@ -156,7 +174,7 @@
           </div>
 
           <!--News Article-->
-          <div class="span3 text-center latest-article">
+          <div class="span3 text-center latest-article sl-news-article">
             <img src="img/annotation-pins.jpg" alt="Title">
             <p>
               <b>Annotations</b><br/>
@@ -165,7 +183,7 @@
           </div>
 
           <!--News Article-->
-          <div class="span3 text-center latest-article">
+          <div class="span3 text-center latest-article sl-news-article">
             <img src="img/latest-news3.jpg" alt="Title">
             <p>
               <b>Communication</b><br/>Our goal is to improve the way companies and employees are able to communicate with each other.  From internal notification to company wide alerts, the value of a real time, systematic communication platform can not be understate.
@@ -173,7 +191,7 @@
           </div>
 
           <!--News Article-->
-          <div class="span3 text-center latest-article">
+          <div class="span3 text-center latest-article sl-news-article">
             <img src="img/manuals.jpg" alt="Title">
             <p>
               <b>Manuals</b><br/>The ability to upload complicated manuals provides employees with easy and instant access at all times from any location necessary.  The simplicity of our application allows for one click interaction and viewing on 3D/2D CAD and images.
@@ -237,6 +255,14 @@
           $('#header').carousel()
         })
       }(window.jQuery)
+
+      var newsArticle = $("div.sl-news-article");
+      var maxHeight = Math.max.apply(null, $("div.sl-news-article").map(function ()
+      {
+          return $(this).height();
+      }).get());
+      newsArticle.height(maxHeight);
+
     </script>
 
   </body>
