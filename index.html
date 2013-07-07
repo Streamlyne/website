@@ -165,7 +165,7 @@
         <div class="row-fluid">
 
           <!--News Article-->
-          <div class="span3 text-center latest-article sl-news-article">
+          <div class="span3 text-center latest-article">
             <img src="img/ipad-mini.jpg" alt="Title">
             <p>
               <b>iOS Mobile platform</b><br/>
@@ -174,7 +174,7 @@
           </div>
 
           <!--News Article-->
-          <div class="span3 text-center latest-article sl-news-article">
+          <div class="span3 text-center latest-article">
             <img src="img/annotation-pins.jpg" alt="Title">
             <p>
               <b>Annotations</b><br/>
@@ -183,7 +183,7 @@
           </div>
 
           <!--News Article-->
-          <div class="span3 text-center latest-article sl-news-article">
+          <div class="span3 text-center latest-article">
             <img src="img/latest-news3.jpg" alt="Title">
             <p>
               <b>Communication</b><br/>Our goal is to improve the way companies and employees are able to communicate with each other.  From internal notification to company wide alerts, the value of a real time, systematic communication platform can not be understate.
@@ -191,7 +191,7 @@
           </div>
 
           <!--News Article-->
-          <div class="span3 text-center latest-article sl-news-article">
+          <div class="span3 text-center latest-article">
             <img src="img/manuals.jpg" alt="Title">
             <p>
               <b>Manuals</b><br/>The ability to upload complicated manuals provides employees with easy and instant access at all times from any location necessary.  The simplicity of our application allows for one click interaction and viewing on 3D/2D CAD and images.
@@ -256,12 +256,7 @@
         })
       }(window.jQuery)
 
-      var newsArticle = $("div.sl-news-article");
-      var maxHeight = Math.max.apply(null, $("div.sl-news-article").map(function ()
-      {
-          return $(this).height();
-      }).get());
-      newsArticle.height(maxHeight);
+      $("div.latest-article").height(400);
 
     </script>
 
