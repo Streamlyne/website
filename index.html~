@@ -83,13 +83,19 @@
 
         <div class="item one active">
           <div class="container animated fadeInUp">
-            
             <div class="carousel-caption">
-              <h2><b>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </b></h2>
+<<<<<<< HEAD
+              <h1>Streamlyne</h1>
+              <p class="lead margin-40"><em><b>
+                    "We simplify and streamline manufacturing employees daily workflow and make it easy for them be great at their jobs"  - Todd Murphy, CEO.  
+                    <br/><br/>
+                    In closed Beta with early adopter customers , please contact us to participate or learn more.
+                  </b></em></p>
             </div>
-            
+=======
+              <h2><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </b></h2>
+            </div>    
+>>>>>>> Main page updated.
           </div>
         </div>
       </div>

@@ -368,12 +368,14 @@ a:hover {
 }
 
 .carousel .item {
-  height: 650px;
+  height: 285px;
 }
 
 
 .one {
-  background: url(../img/header1.jpg) no-repeat center center;
+  background-image: url(../img/header1.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px -116px;
   background-size: cover;
 }
 
@@ -392,9 +394,9 @@ a:hover {
 .carousel-caption {
   background-color: transparent;
   position: static;
-  max-width: 900px;
+  max-width: 1100px;
   padding: 0 20px;
-  margin-top: 36%;
+  margin-top: 10%;
 }
 
 
