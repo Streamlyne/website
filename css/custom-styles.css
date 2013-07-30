@@ -5,13 +5,41 @@
 
 
 #sl-overlay {
-  position:absolute;
-  top:0px;
+  position: absolute;
+  top: 0px;
   z-index: 1;
   background-color: rgba(0,0,0,0.45);
-  width:100%;
+  width: 100%;
 }
 
 .sl-news-article {
 
+}
+
+.sl-news-image {
+	width: 250px;
+	height: 170px;
+	background-position: 0px 0px;
+	margin-bottom: 15px;
+	background-repeat: no-repeat;
+}
+
+#sl-image-communication {
+	background-image: url(../img/latest-news3.jpg);
+	background-size: 100% 100%;
+}
+
+#sl-image-manuals {
+	background-image: url(../img/manuals.jpg);
+	background-size: 100% 100%;	
+}
+
+#sl-image-annotations {
+	background-image: url(../img/annotation-pins.jpg);
+	background-size: 100% 100%;	
+}
+
+#sl-image-ipad {
+	background-image: url(../img/ipad-mini.jpg);
+	background-size: 100% 100%;		
 }
