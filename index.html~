@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="css/animate.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
-
+<link rel="stylesheet" href="css/custom-styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/custom-styles.css">
+    
 
     <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
@@ -83,19 +83,13 @@
 
         <div class="item one active">
           <div class="container animated fadeInUp">
+            
             <div class="carousel-caption">
-<<<<<<< HEAD
-              <h1>Streamlyne</h1>
-              <p class="lead margin-40"><em><b>
-                    "We simplify and streamline manufacturing employees daily workflow and make it easy for them be great at their jobs"  - Todd Murphy, CEO.  
-                    <br/><br/>
-                    In closed Beta with early adopter customers , please contact us to participate or learn more.
-                  </b></em></p>
+              <h2><b>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </b></h2>
             </div>
-=======
-              <h2><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </b></h2>
-            </div>    
->>>>>>> Main page updated.
+            
           </div>
         </div>
       </div>
@@ -103,7 +97,7 @@
 
 
     <!--Services-->
-    <section id="services">
+    <section id="services sl-section">
       <div class="container">
         <div class="row text-center">
 
@@ -146,7 +140,7 @@
 
 
     <!--Message Section-->
-    <section id="message">
+    <section id="message sl-section">
       <div class="container">
 
         <div class="row margin-40">
@@ -156,7 +150,8 @@
         </div>
 
         <div class="row-fluid">
-            <!--News Article-->
+        
+          <!--News Article-->
           <div class="span3 text-center latest-article">
             <div id="sl-image-ipad"
              class="sl-news-image">              
@@ -204,7 +199,7 @@
     </section>
 
     <!--Bottom Section-->
-    <section id="bottom">
+    <section id="bottom sl-section">
       <div class="container">
         <div class="row margin-40">
           <div class="span10 offset1 text-center">
