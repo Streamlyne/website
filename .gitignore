@@ -1,8 +1,8 @@
 .DS_STORE
 *.pyc
 .idea/
-.dist/
-.site/css/
-.site/js/
-.site/*.html
+dist/
+site/css/
+site/js/
+site/*.html
 
