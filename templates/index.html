@@ -177,102 +177,104 @@ Change your images in the main.css file.
 {% block foot_script %}
 <script>
 
-  var rotateTime = 4000;
-  var fadeTime = 200;
-  var i = 0;
-  var text = [
-    $('#sl-prod-text'),
-    $('#sl-cost-text'),
-    $('#sl-safe-text')
-  ];
+  (function( rotateServices, undefined ){
+    var rotateTime = 4000;
+    var fadeTime = 200;
+    var i = 0;
+    var text = [
+      $('#sl-prod-text'),
+      $('#sl-cost-text'),
+      $('#sl-safe-text')
+    ];
 
-  var icon = [
-    $('#sl-prod-icon'),
-    $('#sl-cost-icon'),
-    $('#sl-safe-icon')
-  ];
+    var icon = [
+      $('#sl-prod-icon'),
+      $('#sl-cost-icon'),
+      $('#sl-safe-icon')
+    ];
 
-  function rotateText() {
-    text[i % 3].hide();
-    icon[i % 3].animate({
+    function rotateText() {
+      text[i % 3].hide();
+      icon[i % 3].animate({
+        color: '#dfe5e8'
+      }, fadeTime);
+
+      i++;
+
+      text[i % 3].show();
+      icon[i % 3].animate({
+        color: '#626c72'
+      }, fadeTime);
+    }
+
+    text[1].hide();
+    icon[1].css({
       color: '#dfe5e8'
-    }, fadeTime);
-
-    i++;
-
-    text[i % 3].show();
-    icon[i % 3].animate({
-      color: '#626c72'
-    }, fadeTime);
-  }
-
-  text[1].hide();
-  icon[1].css({
-    color: '#dfe5e8'
-  });
-  text[2].hide();
-  icon[2].css({
-    color: '#dfe5e8'
-  });
-
-  var rotateId = setInterval(rotateText, rotateTime);
-
-  $('#sl-prod-icon').on('mouseenter', function(event) {
-    clearInterval(rotateId);
-    text[i % 3].hide();
-    icon[i % 3].animate({
+    });
+    text[2].hide();
+    icon[2].css({
       color: '#dfe5e8'
-    }, fadeTime);
+    });
 
-    i=0;
+    var rotateId = setInterval(rotateText, rotateTime);
 
-    text[i].show();
-    icon[i].animate({
-      color: '#626c72'
-    }, fadeTime);
-  });
+    $('#sl-prod-icon').on('mouseenter', function(event) {
+      clearInterval(rotateId);
+      text[i % 3].hide();
+      icon[i % 3].animate({
+        color: '#dfe5e8'
+      }, fadeTime);
 
-  $('#sl-prod-icon').on('mouseleave', function(event) {
-    rotateId = setInterval(rotateText, rotateTime);
-  });
+      i=0;
 
-  $('#sl-cost-icon').on('mouseenter', function(event) {
-    clearInterval(rotateId);
-    text[i % 3].hide();
-    icon[i % 3].animate({
-      color: '#dfe5e8'
-    }, fadeTime);
+      text[i].show();
+      icon[i].animate({
+        color: '#626c72'
+      }, fadeTime);
+    });
 
-    i=1;
+    $('#sl-prod-icon').on('mouseleave', function(event) {
+      rotateId = setInterval(rotateText, rotateTime);
+    });
 
-    text[i].show();
-    icon[i].animate({
-      color: '#626c72'
-    }, fadeTime);
-  });
+    $('#sl-cost-icon').on('mouseenter', function(event) {
+      clearInterval(rotateId);
+      text[i % 3].hide();
+      icon[i % 3].animate({
+        color: '#dfe5e8'
+      }, fadeTime);
 
-  $('#sl-cost-icon').on('mouseleave', function(event) {
-    rotateId = setInterval(rotateText, rotateTime);
-  });
+      i=1;
 
-  $('#sl-safe-icon').on('mouseenter', function(event) {
-    clearInterval(rotateId);
-    text[i % 3].hide();
-    icon[i % 3].animate({
-      color: '#dfe5e8'
-    }, 200);
+      text[i].show();
+      icon[i].animate({
+        color: '#626c72'
+      }, fadeTime);
+    });
 
-    i=2;
+    $('#sl-cost-icon').on('mouseleave', function(event) {
+      rotateId = setInterval(rotateText, rotateTime);
+    });
 
-    text[i].show();
-    icon[i].animate({
-      color: '#626c72'
-    }, 200);
-  });
+    $('#sl-safe-icon').on('mouseenter', function(event) {
+      clearInterval(rotateId);
+      text[i % 3].hide();
+      icon[i % 3].animate({
+        color: '#dfe5e8'
+      }, 200);
 
-  $('#sl-safe-icon').on('mouseleave', function(event) {
-    rotateId = setInterval(rotateText, rotateTime);
-  });
+      i=2;
+
+      text[i].show();
+      icon[i].animate({
+        color: '#626c72'
+      }, 200);
+    });
+
+    $('#sl-safe-icon').on('mouseleave', function(event) {
+      rotateId = setInterval(rotateText, rotateTime);
+    });
+  })( window.rotateServices = window.rotateServices || {});
 
 </script>
 {% endblock %}
