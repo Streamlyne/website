@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 
 from distutils.core import setup, Command
+
+from minify.command import \
+    minify_js, \
+    minify_css
+
 import jinja2
 
 def render_html():
@@ -10,24 +15,25 @@ def render_html():
     templateEnv = jinja2.Environment(loader=templateLoader)
 
     rawFiles = [
-        'index.html',
-        'management.html',
-        'operator.html',
-        'team.html',
-        'contact.html'
+        ('index.html', 'home'),
+        ('management.html', 'management'),
+        ('operator.html', 'operator'),
+        ('team.html', 'team'),
+        ('contact.html', 'contact')
     ]
 
     for file in rawFiles:
-        print '  Templating : ' + file
-        template = templateEnv.get_template(file)
+        print '  Templating : ' + file[0]
+        template = templateEnv.get_template(file[0])
 
         vars = {
+            'page': file[1]
         }
 
         outputText = template.render(vars)
         #print outputText
 
-        f = open('site/' + file, mode='w')
+        f = open('site/' + file[0], mode='w')
         f.write(outputText.encode('ascii', 'replace'))
         f.close()
 
@@ -55,43 +61,14 @@ class CompileHTML(Command):
         '''
         render_html()
 
-
-from minify.command import \
-    minify_js, \
-    minify_css
-
-class Render(Command):
-
-    '''
-    Renders HTML, CSS, and JS.
-    '''
-
-    description = 'Renders HTML, CSS, and JS.'
-    user_options = []
-    sub_commands = [
-        ('render_html', None),
-        ('render_head_js', None),
-        ('render_foot_js', None),
-        ('render_css', None)
-    ]
-
-    def initialize_options(self):
-        pass
-
-    def finalize_options(self, *args, **kwargs):
-        pass
-
-    def run(self):
-        render_html()
-
 '''
 Setup information
 '''
 setup(
+
     name='StreamlyneWebsite',
     version='0.4',
-    description='Streamlyne public facing website, optimised as a python '
-                'module.',
+    description='Streamlyne public facing website, optimised as a python module.',
     author='Dawson Reid, and Todd Murphy',
     author_email='dawson@streamlyne.co',
     url='http://www.streamlyne.co',
@@ -115,7 +92,6 @@ setup(
     },
 
     cmdclass={
-        'render': Render,
         'render_html': CompileHTML,
         'render_head_js': minify_js,
         'render_foot_js': minify_js,

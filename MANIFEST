@@ -15,12 +15,7 @@ site/js
 site/management.html
 site/operator.html
 site/team.html
-site/css/animate.css
-site/css/bootstrap.min.css
-site/css/custom-styles.css
-site/css/flexslider.css
-site/css/font-awesome.min.css
-site/css/main.css
+site/css/sl.min.css
 site/font/FontAwesome.otf
 site/font/fontawesome-webfont.eot
 site/font/fontawesome-webfont.svg
@@ -43,11 +38,5 @@ site/img/team_1.jpg
 site/img/team_2.jpg
 site/img/testimonial-bg.jpg
 site/img/todd.jpg
-site/js/bootstrap.min.js
-site/js/jquery-1.9.1.js
-site/js/jquery.color-2.1.2.min.js
-site/js/jquery.flexslider-min.js
-site/js/main.js
-site/js/modernizr-2.6.2-respond-1.1.0.min.js
-site/js/rotate.js
-site/js/twitter-feed.js
+site/js/sl.foot.min.js
+site/js/sl.head.min.js

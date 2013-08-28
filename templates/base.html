@@ -58,13 +58,25 @@
 
           <div class="nav-collapse collapse">
             <ul class="nav pull-right">
-              <li id='sl-page-home'><a href="index.html">Home</a></li>
-              <li id='sl-page-management'><a href="management.html">Management Analytics</a></li>
-              <li id='sl-page-operator'><a href="operator.html">Operator App</a></li>
-              <li id='sl-page-team'><a href="team.html">Team</a></li>
-              <li id='sl-page-contact'><a href="contact.html">Contact</a></li>
+              <li id='sl-page-home'
+                  ><a href="index.html">Home</a></li>
+              <li id='sl-page-management'
+                  ><a href="management.html">Management Analytics</a></li>
+              <li id='sl-page-operator'
+                  ><a href="operator.html">Operator App</a></li>
+              <li id='sl-page-team'
+                  ><a href="team.html">Team</a></li>
+              <li id='sl-page-contact'
+                  ><a href="contact.html">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
+
+          <!--
+          Highlights the current page. Page is defined in setup.py.
+          -->
+          <script>
+            $('li#sl-page-{{ page }}').addClass('active');
+          </script>
         </div>
       </div>
     </div>
