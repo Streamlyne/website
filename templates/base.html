@@ -9,16 +9,10 @@
     <link rel="icon" href="img/cube_molecule.ico" type="image/x-icon"/>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animate.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/sl.min.css">
 
-    <link rel="stylesheet" href="css/custom-styles.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    
-
-    <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="js/sl.head.min.js"></script>
 
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
@@ -64,11 +58,11 @@
 
           <div class="nav-collapse collapse">
             <ul class="nav pull-right">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="management.html">Management Analytics</a></li>
-              <li><a href="operator.html">Operator App</a></li>
-              <li><a href="team.html">Team</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li id='sl-page-home'><a href="index.html">Home</a></li>
+              <li id='sl-page-management'><a href="management.html">Management Analytics</a></li>
+              <li id='sl-page-operator'><a href="operator.html">Operator App</a></li>
+              <li id='sl-page-team'><a href="team.html">Team</a></li>
+              <li id='sl-page-contact'><a href="contact.html">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -93,15 +87,12 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/js/jquery-1.9.1.js"><\/script>')</script>
-    <script src="./js/jquery.color-2.1.2.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/rotate.js"></script>
-    <script src="./js/twitter-feed.js"></script>
-    <!--Twitter Handle - Insert your Twitter username below ex: (screen_name=USERNAME&include) -->
+    <script src="./js/sl.foot.min.js"></script>
+    <!--Twitter Handle - Insert your Twitter username below ex: (screen_name=USERNAME&include)
     <script src="http://api.twitter.com/1/statuses/user_timeline.json?screen_name=themearmada&amp;include_rts=true&amp;count=4&amp;callback=twitterCallback2" type="text/javascript"></script>
+    -->
 
+    <!--
     <script>
       !function($) {
         $(function() {
@@ -110,7 +101,8 @@
       }(window.jQuery)
 
       $("div.latest-article").height(400);
-    </script>
+     </script>
+    -->
 
     {% block foot_script %}
     {% endblock %}
