@@ -2,3 +2,7 @@
 *.pyc
 .idea/
 .dist/
+.site/css/
+.site/js/
+.site/*.html
+
