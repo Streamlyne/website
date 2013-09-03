@@ -368,7 +368,8 @@ a:hover {
 }
 
 .carousel .item {
-  height: 285px;
+  /* height: 285px; */
+  height: 340px;
 }
 
 
