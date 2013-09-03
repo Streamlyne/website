@@ -30,7 +30,8 @@
 }
 
 #sl-image-communication {
-	background-image: url(../img/latest-news3.jpg);
+	/* background-image: url(../img/latest-news3.jpg); */
+    background-image: url(../img/asset_profile_portrait_2.png);
 	background-size: 100% 100%;
 }
 
@@ -40,7 +41,8 @@
 }
 
 #sl-image-annotations {
-	background-image: url(../img/annotation-pins.jpg);
+	/* background-image: url(../img/annotation-pins.jpg); */
+	background-image: url(../img/cad_portrait_2.png);
 	background-size: 100% 100%;	
 }
 
