@@ -5,4 +5,5 @@ dist/
 site/css/
 site/js/
 site/*.html
+!site/sitemap.html
 

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://streamlyne.co/</title>
+  <link>http://streamlyne.co/</link>
+
+<item>
+     <link>http://streamlyne.co/</link>
+     <title>Streamlyne | Home</title>
+     <description>Streamlyne | Home</description>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://streamlyne.co/index.html</link>
+     <title>Streamlyne | Home</title>
+     <description>Streamlyne | Home</description>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://streamlyne.co/management.html</link>
+     <title>Streamlyne | Home</title>
+     <description>Streamlyne | Home</description>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://streamlyne.co/operator.html</link>
+     <title>Streamlyne | Home</title>
+     <description>Streamlyne | Home</description>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://streamlyne.co/team.html</link>
+     <title>Streamlyne | Home</title>
+     <description>Streamlyne | Home</description>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://streamlyne.co/contact.html</link>
+     <title>Streamlyne | Home</title>
+     <description>Streamlyne | Home</description>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
