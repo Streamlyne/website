@@ -1,0 +1,228 @@
+!!! 5
+html(lang='en')
+head
+    meta(charset='utf-8')
+    title Lava | Designed By Theme Armada
+    meta(name='keywords', content='made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width')
+    meta(property='og:title', content='Lava | Designed By Theme Armada')
+    meta(property='og:type', content='website')
+    meta(property='og:url', content='http://www.themearmada.com/demos/lava')
+    meta(property='og:site_name', content='Theme Armada')
+    meta(property='og:description', content='made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada')
+    //
+       Styles 
+    link(rel='stylesheet', href='css/font-awesome.min.css')
+    link(rel='stylesheet', href='css/animate.css')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/main.css')
+    link(rel='stylesheet', href='css/custom-styles.css')
+    script(src='js/modernizr-2.6.2-respond-1.1.0.min.js')
+    //
+       Fav and touch icons 
+    link(rel='apple-touch-icon-precomposed', sizes='144x144', href='/apple-touch-icon-144-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='114x114', href='/apple-touch-icon-114-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='72x72', href='/apple-touch-icon-72-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', href='/apple-touch-icon-57-precomposed.png')
+    link(rel='shortcut icon', href='/favicon.png')
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        .container
+          a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand(href='index.html')
+            img(src='img/logo.png', alt='logo')
+          .nav-collapse.collapse
+            ul.nav.pull-right
+              li
+                a(href='index.html') Home
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  | Pages & Features
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(href='full-width.html') Full Width
+                  li
+                    a(href='services.html') Services
+                  li
+                    a(href='about.html') About
+                  li
+                    a(href='team.html') Team
+                  li
+                    a(href='pricing.html') Pricing
+                  li
+                    a(href='blog.html') Blog Loop
+                  li
+                    a(href='blog-article.html') Blog Article
+                  li
+                    a(href='login.html') Log In
+                  li
+                    a(href='signup.html') Sign Up
+                  li
+                    a(href='icons.html') Icons
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  | Work
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(href='3-column.html') 3 Column
+                  li
+                    a(href='4-column.html') 4 Column
+                  li
+                    a(href='individual-work.html') Individual Work
+              li
+                a(href='blog.html') Blog
+              li
+                a(href='contact.php') Contact
+          //
+            /.nav-collapse 
+    //
+      Content
+    section#content1
+      .container
+        .row
+          .span7
+            h3 About
+            p.lead See who we are
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            br
+            .margin-30
+              a.btn-main(href='contact.php')
+                i.icon-chevron-right
+                | Contact Us
+          .span5
+            iframe(src='http://player.vimeo.com/video/65902068?title=0&byline=0&portrait=0&color=ff755a', width='100%', height='350', frameborder='0', webkitallowfullscreen='webkitAllowFullScreen', mozallowfullscreen='mozallowfullscreen', allowfullscreen='allowFullScreen')
+    //
+      Message Section
+    section#message
+      .container
+        .row.margin-40
+          .span12.text-center
+            h2
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua.
+    //
+      Content
+    section#content2
+      .container
+        .row
+          .span6.margin-30
+            //
+              First Column - To change progress value make sure to adjust bar width and field value to the same amount
+            h3 Our Skills
+            #progress.display-none
+              .progress-bar.bar-one
+                .progress
+                  span.field Concepts
+                  span.field-value.fade-in 60%
+                  .bar(style='width: 60%;')
+              .progress-bar.bar-two
+                .progress
+                  span.field Design
+                  span.field-value.fade-in 75%
+                  .bar(style='width: 75%;')
+              .progress-bar.bar-three
+                .progress
+                  span.field Awesome!
+                  span.field-value.fade-in 100%
+                  .bar(style='width: 100%;')
+            //
+              End Progress Container
+          .span5.offset1.margin-30
+            h3 Company Stats
+            //
+              Stat
+            .row-fluid.stat
+              .span2
+                i.icon-coffee.icon-3x.light-gray
+              .span10
+                h4 108 Monthly Cups of Coffee
+            //
+              Stat
+            .row-fluid.stat
+              .span2
+                i.icon-group.icon-3x.light-gray
+              .span10
+                h4 Over 300 Happy Clients since 2011
+            //
+              Stat
+            .row-fluid.stat
+              .span2
+                i.icon-headphones.icon-3x.light-gray
+              .span10
+                h4 Over 11,000 Songs In Our Library
+        //
+          End Row
+    //
+      Twitter Feed
+    section#twitter
+      .container
+        .row
+          .span12.text-center
+            i.icon-twitter.icon-4x.gray.margin-20
+            .twitter-feed
+              ul#twitter_update_list.rotate
+    //
+      Bottom Section
+    section#bottom
+      .container
+        .row.margin-40
+          .span10.offset1.text-center
+            p
+              | 1234 Main Street Atlanta, GA 30305 | 404.555.5555  |
+              a(href='mailto:support@themearmada.com')
+                i.icon-envelope-alt
+                | support@themearmada.com
+            hr
+        .row
+          .span10.offset1.text-center
+            //
+              Social Icons
+            ul.social-icons
+              li
+                a.twitter(href='http://www.twitter.com/themearmada', target='_blank')
+                  i.icon-twitter.icon-3x
+              li
+                a.facebook(href='http://www.facebook.com', target='_blank')
+                  i.icon-facebook.icon-3x
+              li
+                a.google(href='http://www.googleplus.com', target='_blank')
+                  i.icon-google-plus.icon-3x
+              li
+                a.instagram(href='http://www.instagram.com', target='_blank')
+                  i.icon-camera-retro.icon-3x
+              li
+                a.pinterest(href='http://www.pinterest.com', target='_blank')
+                  i.icon-pinterest.icon-3x
+              li
+                a.linkedin(href='http://www.linkedin.com', target='_blank')
+                  i.icon-linkedin.icon-3x
+              li
+                a.Github(href='http://www.github.com', target='_blank')
+                  i.icon-github-alt.icon-3x
+    section#footer
+      .container
+        .row
+          .span12.text-center
+            p
+              | @ Copyright. All Rights Reserved. Created by
+              a(href='http://www.themearmada.com') Theme Armada.
+    //
+    //   Javascript
+    //      ================================================== 
+    //
+       Placed at the end of the document so the pages load faster 
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+    script.
+      window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\\/script>')
+    script(src='js/bootstrap.min.js')
+    script(src='js/main.js')
+    script(src='js/rotate.js')
+    

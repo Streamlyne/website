@@ -1,0 +1,48 @@
+/* ==========================================================================
+   Insert Your Custom Styles Below. All styles located in this file will
+   override existing main.css stylesheets.
+   ========================================================================== */
+.carousel .item {
+  /* height: 285px; */
+  /* height: 340px; */
+}
+#sl-overlay {
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.45);
+  width: 100%;
+}
+.sl-news-image {
+  width: 250px;
+  height: 170px;
+  background-position: 0px 0px;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+}
+#sl-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#sl-image-communication {
+  /* background-image: url(../img/latest-news3.jpg); */
+  background-image: url(../img/asset_profile_portrait_2.png);
+  background-size: 100% 100%;
+  width: 100%;
+}
+#sl-image-manuals {
+  background-image: url(../img/manuals.jpg);
+  background-size: 100% 100%;
+  width: 100%;
+}
+#sl-image-annotations {
+  /* background-image: url(../img/annotation-pins.jpg); */
+  background-image: url(../img/cad_portrait_2.png);
+  background-size: 100% 100%;
+  width: 100%;
+}
+#sl-image-ipad {
+  background-image: url(../img/ipad-mini.jpg);
+  background-size: 100% 100%;
+  width: 100%;
+}

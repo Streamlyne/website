@@ -3,6 +3,10 @@
    override existing main.css stylesheets.
    ========================================================================== */ 
 
+.carousel .item {
+  /* height: 285px; */
+  /* height: 340px; */
+}
 
 #sl-overlay {
   position:absolute;
@@ -13,7 +17,7 @@
 }
 
 .deprecated-latest-article {
-  height: 500px;
+  //height: 500px;
 }
 
 .sl-news-image {

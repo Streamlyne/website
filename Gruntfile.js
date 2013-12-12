@@ -35,31 +35,51 @@ module.exports = function(grunt) {
         // compile 
         less: {
             compile: {
-                files: {
-                    'www/style.css': 'less/main.less'
-                }
+                files: [
+                {
+                    'www/style.css': [ 'less/*.less' ]
+                },
+                {
+                  cwd: "css",
+                  src: "**/*.css",
+                  dest: "www/css",
+                  expand: true
+                }]
             }
         },
         jade: {
             compile: {
                 options: {
+                    client: false,
                     pretty: true
                 },
-                files: {
-                    'www/index.html': [ 'jade/index.jade' ],
-                    'www/reports.html': [ 'jade/reports.jade' ],
-                    'www/test.html': [ 'jade/test.jade' ]
-                }
+                files: [ {
+                  cwd: "jade",
+                  src: "**/*.jade",
+                  dest: "www/",
+                  expand: true,
+                  ext: ".html"
+                } ]
             }
         },
         browserify: {
             compile: {
-                files: {
+                files: [ {
                     'www/main.js': [ 'js/main.js' ]
                 }
+                ]
             }
         }, 
-
+        uglify: {
+          compile: {
+            files: [{
+                expand: true,
+                src: '**/*.js',
+                dest: 'www/js',
+                cwd: 'js'
+            }]
+          }
+        },
 
         // file watchers
         watch: {
@@ -68,7 +88,8 @@ module.exports = function(grunt) {
             },
             less: {
                 files: [
-                    'less/*.less'
+                    'less/*.less',
+                    'css/*.css'
                 ],
                 tasks: [
                     'less:compile'
@@ -87,6 +108,7 @@ module.exports = function(grunt) {
                     'js/*.js'
                 ],
                 tasks: [
+                    'uglify:compile',
                     'browserify:compile'
                 ]
             },
@@ -113,6 +135,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('compile', [
     'less:compile',
+    'uglify:compile',
     'browserify:compile',
     'jade:compile'
   ]);
