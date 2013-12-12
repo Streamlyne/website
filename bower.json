@@ -1,0 +1,22 @@
+{
+  "name": "sl-website",
+  "version": "1.0.0",
+  "authors": [
+    "Dawson Reid <dreid93@gmail.com>"
+  ],
+  "description": "The Streamlyne public facing website.",
+  "keywords": [
+    "Streamlyne"
+  ],
+  "license": "MIT",
+  "homepage": "www.streamlyne.co",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/bower",
+    "test",
+    "tests"
+  ]
+}
