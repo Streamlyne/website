@@ -7,3 +7,5 @@ site/js/
 site/*.html
 !site/sitemap.html
 
+node_modules
+node_modules/.bin
