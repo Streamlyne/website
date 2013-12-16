@@ -1,343 +1,198 @@
-!!! 5
-html(lang='en')
-head
-    meta(charset='utf-8')
-    title Lava | Designed By Theme Armada
-    meta(name='keywords', content='made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada')
-    meta(name='description', content='')
-    meta(name='viewport', content='width=device-width')
-    meta(property='og:title', content='Lava | Designed By Theme Armada')
-    meta(property='og:type', content='website')
-    meta(property='og:url', content='http://www.themearmada.com/demos/lava')
-    meta(property='og:site_name', content='Theme Armada')
-    meta(property='og:description', content='made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada')
-    //
-       Styles 
-    link(rel='stylesheet', href='css/font-awesome.min.css')
-    link(rel='stylesheet', href='css/animate.css')
-    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic', rel='stylesheet', type='text/css')
-    link(rel='stylesheet', href='css/bootstrap.min.css')
-    link(rel='stylesheet', href='css/main.css')
-    link(rel='stylesheet', href='style.css')
-    link(rel='stylesheet', href='css/custom-styles.css')
-    script(src='js/modernizr-2.6.2-respond-1.1.0.min.js')
-    //
-       Fav and touch icons 
-    link(rel='apple-touch-icon-precomposed', sizes='144x144', href='/apple-touch-icon-144-precomposed.png')
-    link(rel='apple-touch-icon-precomposed', sizes='114x114', href='/apple-touch-icon-114-precomposed.png')
-    link(rel='apple-touch-icon-precomposed', sizes='72x72', href='/apple-touch-icon-72-precomposed.png')
-    link(rel='apple-touch-icon-precomposed', href='/apple-touch-icon-57-precomposed.png')
-    link(rel='shortcut icon', href='/favicon.png')
-  body
-    .navbar.navbar-inverse.navbar-fixed-top
-      .navbar-inner
+// Index
+extends basic-layout
+
+block head
+  title Home | Streamlyne Technologies
+
+block content
+  //
+  //   Carousel
+  //      Change your images in the main.css file.
+  //      ================================================== 
+  #header.carousel.slide.animated.fadeIn
+    .carousel-inner
+      .item.one.active
+        .container.animated.fadeInUp
+          .carousel-caption
+            h1 Introducing Streamlyne
+            p.lead.margin-40
+              em Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            a.btn-main(href='about.html')
+              i.icon-chevron-right
+              | More
+      .item.two
         .container
-          a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.brand(href='index.html')
-            //-img(src='img/logo.png', alt='logo')
-            span 
-                span.white Stream
-                span.orange lyne
-          .nav-collapse.collapse
-            ul.nav.pull-right
-              li.active
-                a(href='index.html') Home
-              li.dropdown
-                a.dropdown-toggle(href='#', data-toggle='dropdown')
-                  | Pages & Features
-                  b.caret
-                ul.dropdown-menu
-                  li
-                    a(href='full-width.html') Full Width
-                  li
-                    a(href='services.html') Services
-                  li
-                    a(href='about.html') About
-                  li
-                    a(href='team.html') Team
-                  li
-                    a(href='pricing.html') Pricing
-                  li
-                    a(href='blog.html') Blog Loop
-                  li
-                    a(href='blog-article.html') Blog Article
-                  li
-                    a(href='login.html') Log In
-                  li
-                    a(href='signup.html') Sign Up
-                  li
-                    a(href='icons.html') Icons
-              li.dropdown
-                a.dropdown-toggle(href='#', data-toggle='dropdown')
-                  | Work
-                  b.caret
-                ul.dropdown-menu
-                  li
-                    a(href='3-column.html') 3 Column
-                  li
-                    a(href='4-column.html') 4 Column
-                  li
-                    a(href='individual-work.html') Individual Work
-              li
-                a(href='blog.html') Blog
-              li
-                a(href='contact.php') Contact
-          //
-            /.nav-collapse 
-    //
-    //   Carousel
-    //      Change your images in the main.css file.
-    //      ================================================== 
-    #header.carousel.slide.animated.fadeIn
-      .carousel-inner
-        .item.one.active
-          .container.animated.fadeInUp
-            .carousel-caption
-              h1 Introducing Streamlyne
-              p.lead.margin-40
-                em Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              a.btn-main(href='about.html')
-                i.icon-chevron-right
-                | More
-        .item.two
-          .container
-            .carousel-caption
-              h1 Built With Bootstrap
-              p.lead.margin-40
-                em Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              a.btn-main(href='services.html')
-                i.icon-chevron-right
-                | More
-        .item.three
-          .container
-            .carousel-caption
-              h1 100% Responsive
-              p.lead.margin-40
-                em Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              a.btn-main(href='pricing.html')
-                i.icon-chevron-right
-                | More
-      a.left.carousel-control.hidden-phone(href='#header', data-slide='prev')
-        i.icon-angle-left
-      a.right.carousel-control.hidden-phone(href='#header', data-slide='next')
-        i.icon-angle-right
-    //
-       /.carousel 
-    //
-      Services
-    section#services
-      .container
-        .row.text-center
-          //
-            Seciton 1
-          .span4.service.margin-30
-            a(href='#')
-              i.icon-mobile-phone.icon-4x.light-gray
-              h3 Mobile Responsive
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-          //
-            Seciton 2
-          .span4.service.margin-30
-            a(href='#')
-              i.icon-thumbs-up.icon-4x.light-gray
-              h3 Built With Bootstrap
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-          //
-            Seciton 3
-          .span4.service.margin-30
-            a(href='#')
-              i.icon-flag.icon-4x.light-gray
-              h3 Over 249 Icons
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-    //
-      Message Section
-    section#message
-      .container
+          .carousel-caption
+            h1 Built With Bootstrap
+            p.lead.margin-40
+              em Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            a.btn-main(href='services.html')
+              i.icon-chevron-right
+              | More
+      .item.three
+        .container
+          .carousel-caption
+            h1 100% Responsive
+            p.lead.margin-40
+              em Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            a.btn-main(href='pricing.html')
+              i.icon-chevron-right
+              | More
+    a.left.carousel-control.hidden-phone(href='#header', data-slide='prev')
+      i.icon-angle-left
+    a.right.carousel-control.hidden-phone(href='#header', data-slide='next')
+      i.icon-angle-right
+  //
+     /.carousel 
+  //
+    Services
+  section#services
+    .container
+      .row.text-center
+        //
+          Seciton 1
+        .span4.service.margin-30
+          a(href='#')
+            i.icon-mobile-phone.icon-4x.light-gray
+            h3 Mobile Responsive
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+        //
+          Seciton 2
+        .span4.service.margin-30
+          a(href='#')
+            i.icon-thumbs-up.icon-4x.light-gray
+            h3 Built With Bootstrap
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+        //
+          Seciton 3
+        .span4.service.margin-30
+          a(href='#')
+            i.icon-flag.icon-4x.light-gray
+            h3 Over 249 Icons
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+  //
+    Message Section
+  section#message
+    .container
+      .row.margin-40
+        .span12.text-center
+          h2
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua.
+      .row
+        .span12.text-center
+          a.more(href='about.html')
+            i.icon-chevron-sign-right.icon-2x.white
+  //
+    Latest Work
+  section#latest-work
+    .container.text-center
+      .row
+        .span12.margin-40
+          h3 Latest Work
         .row.margin-40
-          .span12.text-center
-            h2
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua.
-        .row
-          .span12.text-center
-            a.more(href='about.html')
-              i.icon-chevron-sign-right.icon-2x.white
-    //
-      Latest Work
-    section#latest-work
-      .container.text-center
-        .row
-          .span12.margin-40
-            h3 Latest Work
-          .row.margin-40
-            //
-              Project Thumbnail One
-            .span4
-              .thumbs
-                img(src='img/portfolio1.jpg', alt='Image Size 430x280')
-                a(href='individual-work.html')
-                  span.title
-                    span
-                      i.icon-link.icon-2x
-              .project-title.margin-30
-                h4 Breakroom
-            //
-              Project Thumbnail Two
-            .span4
-              .thumbs
-                img(src='img/portfolio2.jpg', alt='Image Size 430x280')
-                a(href='individual-work.html')
-                  span.title
-                    span
-                      i.icon-link.icon-2x
-              .project-title.margin-30
-                h4 White Sneaker
-            //
-              Project Thumbnail Three
-            .span4
-              .thumbs
-                img(src='img/portfolio3.jpg', alt='Image Size 430x280')
-                a(href='individual-work.html')
-                  span.title
-                    span
-                      i.icon-link.icon-2x
-              .project-title.margin-30
-                h4 Theme Armada
           //
-            End Row of Work
-          .row
-            .span12.text-center
-              a.more(href='3-column.html')
-                i.icon-chevron-sign-right.icon-2x.gray
-    //
-      Testimonial Section
-    section#testimonial
-      .container
-        .row
-          .span3.margin-30
-            img(src='img/testimonial-img.png', alt='Title')
-          .span9
-            h2
-              | “Lava has been an asset to our company by providing us with a cutting edge look and a web presence that shows off our work and skills.”
-            .testimonial-source.pull-right Jeff | Ceo - Creative Company
-    //
-      Latest News
-    section#latest-news
-      .container
-        .row.margin-40
-          .span12.text-center.dark-gray
-            h3 Latest News
-        .row-fluid
+            Project Thumbnail One
+          .span4
+            .thumbs
+              img(src='img/portfolio1.jpg', alt='Image Size 430x280')
+              a(href='individual-work.html')
+                span.title
+                  span
+                    i.icon-link.icon-2x
+            .project-title.margin-30
+              h4 Breakroom
           //
-            News Article
-          .span3.text-center.latest-article
-            img(src='img/latest-news1.jpg', alt='Title')
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            br
-            a.more(href='individual-blog.html')
-              i.icon-chevron-sign-right.icon-2x.margin-20.gray
+            Project Thumbnail Two
+          .span4
+            .thumbs
+              img(src='img/portfolio2.jpg', alt='Image Size 430x280')
+              a(href='individual-work.html')
+                span.title
+                  span
+                    i.icon-link.icon-2x
+            .project-title.margin-30
+              h4 White Sneaker
           //
-            News Article
-          .span3.text-center.latest-article
-            img(src='img/latest-news2.jpg', alt='Title')
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            br
-            a.more(href='individual-blog.html')
-              i.icon-chevron-sign-right.icon-2x.margin-20.gray
-          //
-            News Article
-          .span3.text-center.latest-article
-            img(src='img/latest-news3.jpg', alt='Title')
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            br
-            a.more(href='individual-blog.html')
-              i.icon-chevron-sign-right.icon-2x.margin-20.gray
-          //
-            News Article
-          .span3.text-center.latest-article
-            img(src='img/latest-news4.jpg', alt='Title')
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            br
-            a.more(href='individual-blog.html')
-              i.icon-chevron-sign-right.icon-2x.margin-20.gray
-    //
-      Twitter Feed
-    section#twitter
-      .container
+            Project Thumbnail Three
+          .span4
+            .thumbs
+              img(src='img/portfolio3.jpg', alt='Image Size 430x280')
+              a(href='individual-work.html')
+                span.title
+                  span
+                    i.icon-link.icon-2x
+            .project-title.margin-30
+              h4 Theme Armada
+        //
+          End Row of Work
         .row
           .span12.text-center
-            i.icon-twitter.icon-4x.gray.margin-20
-            .twitter-feed
-              ul#twitter_update_list.rotate
-    //
-      Bottom Section
-    section#bottom
-      .container
-        .row.margin-40
-          .span10.offset1.text-center
-            p
-              | 1234 Main Street Atlanta, GA 30305 | 404.555.5555  |
-              a(href='mailto:support@themearmada.com')
-                i.icon-envelope-alt
-                | support@themearmada.com
-            hr
-        .row
-          .span10.offset1.text-center
-            //
-              Social Icons
-            ul.social-icons
-              li
-                a.twitter(href='http://www.twitter.com/themearmada', target='_blank')
-                  i.icon-twitter.icon-3x
-              li
-                a.facebook(href='http://www.facebook.com', target='_blank')
-                  i.icon-facebook.icon-3x
-              li
-                a.google(href='http://www.googleplus.com', target='_blank')
-                  i.icon-google-plus.icon-3x
-              li
-                a.instagram(href='http://www.instagram.com', target='_blank')
-                  i.icon-camera-retro.icon-3x
-              li
-                a.pinterest(href='http://www.pinterest.com', target='_blank')
-                  i.icon-pinterest.icon-3x
-              li
-                a.linkedin(href='http://www.linkedin.com', target='_blank')
-                  i.icon-linkedin.icon-3x
-              li
-                a.Github(href='http://www.github.com', target='_blank')
-                  i.icon-github-alt.icon-3x
-    section#footer
-      .container
-        .row
-          .span12.text-center
-            p
-              | @ Copyright. All Rights Reserved. Created by
-              a(href='http://www.themearmada.com') Theme Armada.
-    //
-    //   Javascript
-    //      ================================================== 
-    //
-       Placed at the end of the document so the pages load faster 
-    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
-    script.
-      window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\\/script>')
-    script(src='js/bootstrap.min.js')
-    script(src='js/main.js')
-    script(src='js/rotate.js')
-    
-    script.
-      !function ($) {
-      $(function(){
-      $('#header').carousel()
-      })
-      }(window.jQuery)
+            a.more(href='3-column.html')
+              i.icon-chevron-sign-right.icon-2x.gray
+  //
+    Testimonial Section
+  section#testimonial
+    .container
+      .row
+        .span3.margin-30
+          img(src='img/testimonial-img.png', alt='Title')
+        .span9
+          h2
+            | “Lava has been an asset to our company by providing us with a cutting edge look and a web presence that shows off our work and skills.”
+          .testimonial-source.pull-right Jeff | Ceo - Creative Company
+  //
+    Latest News
+  section#latest-news
+    .container
+      .row.margin-40
+        .span12.text-center.dark-gray
+          h3 Latest News
+      .row-fluid
+        //
+          News Article
+        .span3.text-center.latest-article
+          img(src='img/latest-news1.jpg', alt='Title')
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          br
+          a.more(href='individual-blog.html')
+            i.icon-chevron-sign-right.icon-2x.margin-20.gray
+        //
+          News Article
+        .span3.text-center.latest-article
+          img(src='img/latest-news2.jpg', alt='Title')
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          br
+          a.more(href='individual-blog.html')
+            i.icon-chevron-sign-right.icon-2x.margin-20.gray
+        //
+          News Article
+        .span3.text-center.latest-article
+          img(src='img/latest-news3.jpg', alt='Title')
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          br
+          a.more(href='individual-blog.html')
+            i.icon-chevron-sign-right.icon-2x.margin-20.gray
+        //
+          News Article
+        .span3.text-center.latest-article
+          img(src='img/latest-news4.jpg', alt='Title')
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          br
+          a.more(href='individual-blog.html')
+            i.icon-chevron-sign-right.icon-2x.margin-20.gray
+  //
+    Twitter Feed
+  section#twitter
+    .container
+      .row
+        .span12.text-center
+          i.icon-twitter.icon-4x.gray.margin-20
+          .twitter-feed
+            ul#twitter_update_list.rotate

@@ -18,5 +18,11 @@
     "www/bower",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "*",
+    "bootstrap": "*",
+    "font-awesome": "*",
+    "modernizr": "*"
+  }
 }

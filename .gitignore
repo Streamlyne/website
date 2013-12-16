@@ -1,11 +1,30 @@
-.DS_STORE
+# Vim
+*~
+*.swp
+*.swo
+
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+# Icon must ends with two \r.
+Icon
+# Thumbnails
+._*
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
 *.pyc
 .idea/
 dist/
+www
+
 site/css/
 site/js/
 site/*.html
 !site/sitemap.html
 
 node_modules
-node_modules/.bin
+
+

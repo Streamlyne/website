@@ -1,0 +1,60 @@
+// Navbar
+
+.navbar.navbar-inverse.navbar-fixed-top
+  .navbar-inner
+    .container
+      a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.brand(href='index.html')
+        //-img(src='img/logo.png', alt='logo')
+        span 
+            span.white Stream
+            span.orange lyne
+      .nav-collapse.collapse
+        ul.nav.pull-right
+          li.active
+            a(href='index.html') Home
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown')
+              | Pages & Features
+              b.caret
+            ul.dropdown-menu
+              li
+                a(href='full-width.html') Full Width
+              li
+                a(href='services.html') Services
+              li
+                a(href='about.html') About
+              li
+                a(href='team.html') Team
+              li
+                a(href='pricing.html') Pricing
+              li
+                a(href='blog.html') Blog Loop
+              li
+                a(href='blog-article.html') Blog Article
+              li
+                a(href='login.html') Log In
+              li
+                a(href='signup.html') Sign Up
+              li
+                a(href='icons.html') Icons
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown')
+              | Work
+              b.caret
+            ul.dropdown-menu
+              li
+                a(href='3-column.html') 3 Column
+              li
+                a(href='4-column.html') 4 Column
+              li
+                a(href='individual-work.html') Individual Work
+          li
+            a(href='blog.html') Blog
+          li
+            a(href='contact.php') Contact
+      //
+        /.nav-collapse 
