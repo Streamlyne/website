@@ -31,6 +31,21 @@ module.exports = function(grunt) {
             }
         },
 
+        // Copy
+        copy: {
+            main: {
+                files: [ 
+                {
+                    src: 'img/*',
+                    dest: 'www/'
+                }, 
+                {
+                    src: 'font/*',
+                    dest: 'www/'
+                }
+                ]
+            }
+        },
 
         // compile 
         less: {
@@ -64,9 +79,10 @@ module.exports = function(grunt) {
         },
         browserify: {
             compile: {
-                files: [ {
-                    'www/main.js': [ 'js/main.js' ]
-                }
+                files: [ 
+                    {
+                        'www/main.js': [ 'js/main.js' ]
+                    }
                 ]
             }
         }, 
@@ -86,6 +102,16 @@ module.exports = function(grunt) {
             options: {
                 livereload: true
             },
+
+            copy: {
+                files: [
+                    'img/*'
+                ],
+                tasks: [
+                    'copy:main'
+                ]
+            },
+
             less: {
                 files: [
                     'less/*.less',
@@ -137,7 +163,8 @@ module.exports = function(grunt) {
     'less:compile',
     'uglify:compile',
     'browserify:compile',
-    'jade:compile'
+    'jade:compile',
+    'copy:main'
   ]);
 
   // Default task(s).

@@ -2,7 +2,7 @@
   "name": "sl-website",
   "version": "1.0.0",
   "authors": [
-    "Dawson Reid <dreid93@gmail.com>"
+    "Dawson Reid <dawson@streamlyne.co> and Glavin Wiechert <glavin@streamlyne.co>"
   ],
   "description": "The Streamlyne public facing website.",
   "keywords": [
@@ -23,6 +23,7 @@
     "jquery": "*",
     "bootstrap": "*",
     "font-awesome": "*",
-    "modernizr": "*"
+    "modernizr": "*",
+    "animate.css": "*"
   }
 }
