@@ -1,43 +1,34 @@
 ---
 component: navbar
 ---
-<!-- Fixed navbar -->
+
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="{{relative page.dest "dist/index.html"}}">{{ site.title }}</a>
+      </a>
+
+        <a class="brand" href="index.html">
+            {{!--
+            <img src="{{assets}}/img/logo.png" alt="logo">
+            --}}
+            <h2 style="padding:0px; margin:0px;">
+            Streamlyne
+            </h2>
+        </a>
+      
+      <div class="nav-collapse collapse">
+        <ul class="nav pull-right">
+            {{#each pages}}
+            <li{{#if this.isCurrentPage}} class="active"{{/if}}>
+              <a href="{{relative dest this.dest}}">{{ data.title }}</a>
+            </li>
+            {{/each}}
+        </ul>
+      </div><!--/.nav-collapse -->
     </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <!-- you can exclude pages using \{{#isnt}} helper: \{{#isnt data.title 'Blog'}} -->
-        {{#each pages}}
-        <li{{#if this.isCurrentPage}} class="active"{{/if}}>
-          <a href="{{relative dest this.dest}}">{{ data.title }}</a>
-        </li>
-        {{/each}}
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Github <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="https://github.com/assemble/assemble">Assemble</a></li>
-            <li><a href="https://github.com/assemble/generator-assemble">Generator Assemble</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-header">Plugins</li>
-            <li><a href="https://github.com/assemble/assemble-contrib-anchors">assemble-contrib-anchors</a></li>
-            <li><a href="https://github.com/assemble/assemble-contrib-permalinks">assemble-contrib-permalinks</a></li>
-            <li><a href="https://github.com/assemble/assemble-contrib-sitemap">assemble-contrib-sitemap</a></li>
-            <li><a href="https://github.com/assemble/assemble-contrib-toc">assemble-contrib-toc</a></li>
-            
-          </ul>
-        </li>
-      </ul>
-    </div><!--/.nav-collapse -->
   </div>
 </div>
