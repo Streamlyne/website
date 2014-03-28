@@ -5,24 +5,27 @@ title: Company
 <div class="container">
 
 <div>
-{{#each bios}}
-    <div>
-    <h3>{{name}}, {{title}}</h3>
-    {{md bio}}
-    </div>
-    <br/>
-{{/each}}
+
 </div>
 
-<hr/>
+<h3 class="text-center">Our Team</h3>
+<br/>
 
-<div>
-Streamlyne Technologies Ltd
-111 Pebblecreek Crescent, Suite 208
-Dartmouth, Nova Scotia
-B2W 0L1
-(902) 210-6735
-info@streamlyne.co
+<div class="row">
+{{#each bios}}
+    <div class="col-md-4">
+    <img class="img-thumbnail" src="assets/{{avatar}}"/>
+    <h3>{{name}}</h3>
+    <h4>{{title}}</h4>
+    <p>
+    	<a href="{{linkedin}}">LinkedIn</a>
+    	<a href="{{linkedin}}">Twitter</a>
+    	<a href="{{linkedin}}">GitHub</a>
+    	<a href="mailto:{{linkedin}}">Email</a>
+    </p>
+    <p>{{bio}}</p>
+    </div>
+{{/each}}
 </div>
 
 </div>

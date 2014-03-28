@@ -1,3 +1,92 @@
+/*
+Streamlyne Custom Overrides for Lava Template and Twitter Bootstrap
+author: Glavin Wiechert. Todd Murphy;
+*/
+
+
 body {
-    padding-top: 91px;
+    padding-top: 50px;
+}
+
+body *,
+.navbar-inverse .nav > li > a {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+}
+
+.one {
+	background: url:(../header1.jpng) no-repeat center 75%;
+	background-size: cover;
+}
+
+.carousel-control,
+.carousel-control.right,
+.carousel-control.left {
+	width: 40px;
+	margin-top: 20%;
+
+	background: none;
+	color: rgb(255,117,90);
+	font-size: 7em;
+}
+
+.carousel-caption {
+	margin-top: 20%;
+}
+
+p.lead {
+	color: #FFFFFF;
+}
+
+.navbar-inverse {
+   	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	background-color: #26292B;
+}
+
+.navbar-inverse .nav .active > a, 
+.navbar-inverse .nav .active > a:hover, 
+.navbar-inverse .nav .active > a:focus {
+	color: #FF851B;
+}
+
+.navbar .nav > li > a {
+	text-transform: none;
+	letter-spacing: normal;
+}
+
+.navbar .nav > li > a:hover {
+	color: #FFDC00;	
+}
+
+a:hover { 
+	color: #FF851B;
+}
+
+.nav>li>a:hover, 
+.nav>li>a:focus {
+	background-color: #FFDC00;
+	color: #626c72;
+}
+
+section {
+	-webkit-font-smoothing: antialiased;
+	background: #F7F8FB;
+	border: 1px solid #EAEDF7;
+	box-shadow: inset rgba(100, 100, 100, 0.25) 0 1px 1px;
+	/*
+	margin-top: 60px;
+	*/
+}
+
+/* Page Specific */
+.analytics-page .right-column {
+	overflow: hidden;
+	-webkit-font-smoothing: antialiased;
+	/*
+	box-shadow: inset rgba(100, 100, 100, 0.25) 0px 1px 1px;
+	*/
+}
+
+.early-adopter-page .heading h1 {
+	color: #FF851B;
 }

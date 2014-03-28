@@ -15,17 +15,16 @@
     <meta property="og:description" content="made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="{{assets}}/css/font-awesome.min.css">
-  <link rel="stylesheet" href="{{assets}}/css/animate.css">
+  <link rel="stylesheet" href="{{assets}}/bower/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{assets}}/bower/animate.css/animate.min.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
   
-
-  <link rel="stylesheet" href="{{assets}}/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{assets}}/bower/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="{{assets}}/css/lava-theme.css">
   <link rel="stylesheet" href="{{assets}}/css/main.css">
   <link rel="stylesheet" href="{{assets}}/css/custom-styles.css">
 
-  <script src="{{assets}}/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <script src="{{assets}}/bower/modernizr/modernizr.js"></script>
 
   <!-- Fav and touch icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{assets}}/apple-touch-icon-144-precomposed.png">
@@ -64,10 +63,13 @@
 
     </div>
 
+    {{> footer}}
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="{{assets}}/bower/jquery/dist/jquery.min.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="{{assets}}/js/bootstrap.min.js"></script>
+    <script src="{{assets}}/bower/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>

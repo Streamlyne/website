@@ -3,7 +3,7 @@
 <head>
 
   <meta charset="utf-8">
-  <title>Home | Streamlyne Website</title>
+  <title>Home | Streamlyne</title>
   <meta name="keywords" content="made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,17 +15,16 @@
     <meta property="og:description" content="made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/bower/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/bower/animate.css/animate.min.css">
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
   
-
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bower/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/lava-theme.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/custom-styles.css">
 
-  <script src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <script src="assets/bower/modernizr/modernizr.js"></script>
 
   <!-- Fav and touch icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/apple-touch-icon-144-precomposed.png">
@@ -42,24 +41,26 @@
 
     
 
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </a>
-
-        <a class="brand" href="index.html">
-            
-            <h2 style="padding:0px; margin:0px;">
+      </button>
+      <a class="navbar-brand" href="#">
+        <h2 style="padding:0px; margin:0px;">
             Streamlyne
-            </h2>
+          </h2>
         </a>
-      
-      <div class="nav-collapse collapse">
-        <ul class="nav pull-right">
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
             
             <li>
               <a href="analytics.html">Analytics</a>
@@ -90,10 +91,11 @@
             </li>
             
         </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </div>
-</div>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
 
     <div class="" role="main">
 
@@ -108,15 +110,9 @@ Change your images in the main.css file.
       <div class="container animated fadeInUp">
         <div class="carousel-caption">
           <h1>Predict and Prevent Plant Downtime</h1>
+          <br>
           <p class="lead margin-40"><em>We connect and collect data from your plant management systems and run this data through our custom analytics platform to alert, track, and trend major problems before they happen.</em></p>
-          <!--
-          <p>
-          <blockquote>
-          “Last month, our plant had a major “blockages” and “equipment failure” and if we had Streamlyne it could’ve predicted and helped prevent 3 days of downtime which cost us hundreds of thousands of dollars” - Early Adopter Customer of 15+ plants
-          </blockquote>
-          </p>
-          -->
-          <a class="btn-main" href="about.html"><i class="icon-chevron-right"></i> More</a>
+          <a class="btn-main" href="about.html"><i class="fa fa-chevron-right"></i> More</a>
         </div>
       </div>
     </div>
@@ -125,7 +121,7 @@ Change your images in the main.css file.
         <div class="carousel-caption">
           <h1>Built With Bootstrap</h1>
           <p class="lead margin-40"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></p>
-          <a class="btn-main" href="services.html"><i class="icon-chevron-right"></i> More</a>
+          <a class="btn-main" href="services.html"><i class="fa fa-chevron-right"></i> More</a>
         </div>
       </div>
     </div>
@@ -134,52 +130,161 @@ Change your images in the main.css file.
         <div class="carousel-caption">
           <h1>100% Responsive</h1>
           <p class="lead margin-40"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></p>
-          <a class="btn-main" href="pricing.html"><i class="icon-chevron-right"></i> More</a>
+          <a class="btn-main" href="pricing.html"><i class="fa fa-chevron-right"></i> More</a>
         </div>
       </div>
     </div>
   </div>
-  <a class="left carousel-control hidden-phone" href="#header" data-slide="prev"><i class="icon-angle-left"></i></a>
-  <a class="right carousel-control hidden-phone" href="#header" data-slide="next"><i class="icon-angle-right"></i></a>
+  <a class="left carousel-control hidden-phone" href="#header" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+  <a class="right carousel-control hidden-phone" href="#header" data-slide="next"><i class="fa fa-angle-right"></i></a>
 </div><!-- /.carousel -->
+
+<br>
+<br>
+
+
+<h2 class="text-danger text-center">Welcome to the Industrial Internet of Oil and Gas</h2>
+
+<p class="text-center">
+  Streamlyne connects the unconnected in your plant and displays new intelligent analytics and insight to optimize efficiencies.
+  makes your machines and plant operations smarter in the industrial internet of things.
+  Streamlyne alerts, tracks, and trends major problems before they happen.
+</p>
+
+
+<br>
+<br>
+
+<section>
+  <div class="container  text-right">
+
+    <h3><i class="fa fa-usd"></i>  Less Downtime</h3>
+    <div class="">
+      <p>Today your plant is humming along, but on the night shift a critical component malfunctions or completely fails. As a result, your plant shuts down for emergency repair. How much will this cost? Do you have the extra parts on hand? How many employees does this affect? How does this affect your output and timelines? The unknown can be scary and costly. Streamlyne gives you the ability to be proactive by giving your operators and managers the alerts needed to prevent reactive consequences.</p>
+
+      <br>
+      <br>
+
+      <blockquote>
+        <p class="text-danger">Last month, our plant had a major “blockages” and “equipment failure” and if we had Streamlyne it could’ve predicted and helped prevent 3 days of downtime which cost us hundreds of thousands of dollars.</p>
+        <footer>Early Adopter Customer of 15+ plants</footer>
+      </blockquote>
+    </div>
+
+  </div>
+</section>
+
+<br>
+<br>
+
+<div class="container">
+  <h3><i class="fa fa-usd"></i>  Better Performance Means Satisfied Customers</h3>
+  <div class="">
+    <p>Interruptions in production and workflow directly impacts your customers, and your customers customer. Streamlyne allows your company to track and trend so that you can better predict events related to loss of production and affected timelines. With better planning, this gives your customer the best service and experience possible.</p>
+
+  </div>
+</div>
+
+<br>
+<br>
+
+
+<section>
+  <div class="container text-right">
+
+    <h3><i class="fa fa-usd"></i>  Improving Safety</h3>
+    <div class="">
+      <p>Having the right information at all times protects you and your employees from harm. The ability to access the latest information on assets, lock-outs, blinds, CAD’s, procedures, work orders, and safety alerts while working on a piece of equipment is critical to safety when working with hazardous chemicals, gases, and large interworking pieces of equipment. This becomes even more important with new employees.</p>
+    </div>
+  </div>
+</section>
+
+<br>
+<br>
+
 
 <div class="container">
 
-<div>
-<h3>Less downtime</h3>
-<div class="lead">
-Today your plant is humming along, but on the night shift a critical component malfunctions or completely fails. As a result, your plant shuts down for emergency repair. How much will this cost? Do you have the extra parts on hand? How many employees does this affect? How does this affect your output and timelines? The unknown can be scary and costly. Streamlyne gives you the ability to be proactive by giving your operators and managers the alerts needed to prevent reactive consequences.
+  <h3><i class="fa fa-usd"></i>  Real-Time Data At Your Fingertips</h3>
+  <div class="">
+    <p>We simplify the way oil and gas operators do their jobs.Streamlyne delivers live information that will gives you a complete overview of asset information, including critical information on hazard and safety alerts while working on a piece of equipment.</p>
+  </div>
 </div>
 
-<h3>Better performance means satisfied customers</h3>
-<div class="lead">
-Interruptions in production and workflow directly impacts your customers, and your customers customer. Streamlyne allows your company to track and trend so that you can better predict events related to loss of production and affected timelines. With better planning, this gives your customer the best service and experience possible.
-</div>
+<br>
+<br>
 
-<h3>Improving Safety</h3>
-<div class="lead">
-Having the right information at all times protects you and your employees from harm. The ability to access the latest information on assets, lock-outs, blinds, CAD’s, procedures, work orders, and safety alerts while working on a piece of equipment is critical to safety when working with hazardous chemicals, gases, and large interworking pieces of equipment. This becomes even more important with new employees.
-</div>
+<section>
+  <div class="container  text-right">
 
-<h3>Real-time Data at your fingertips</h3>
-<div class="lead">
-We simplify the way oil and gas operators do their jobs.Streamlyne delivers live information that will gives you a complete overview of asset information, including critical information on hazard and safety alerts while working on a piece of equipment.
-
-Collaborate and share knowledge 
-<div class="lead">
-New and senior employees can share knowledge on plant operations, which makes everybody and the entire company smarter.
-</div>
-
-</div>
-
-</div>
-
+    <h3><i class="fa fa-usd"></i>  Collaborate and Share Knowledge</h3>
+    <div class="">
+      <p>New and senior employees can share knowledge on plant operations, which makes everybody and the entire company smarter.</p>
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
+  </div>
 
-</div></body>
+</section></div>
+
+
+
+
+    
+
+    
+<section id="footer">
+  <div class="container">
+    
+
+    <ul class="nav navbar-nav">
+	    
+	    <li>
+	      <a href="analytics.html">Analytics</a>
+	    </li>
+	    
+	    <li>
+	      <a href="blog.html">Blog</a>
+	    </li>
+	    
+	    <li>
+	      <a href="company.html">Company</a>
+	    </li>
+	    
+	    <li>
+	      <a href="early-adopter.html">Early Adopter</a>
+	    </li>
+	    
+	    <li>
+	      <a href="features.html">Features</a>
+	    </li>
+	    
+	    <li>
+	      <a href="how-it-works.html">How It Works</a>
+	    </li>
+	    
+	    <li class="active">
+	      <a href="index.html">Home</a>
+	    </li>
+	    
+	</ul>
+	
+	<br>
+
+    <div class="row">
+      <div class="span12 text-center">
+      	<p>&copy; 2014 Streamlyne Technologies Limited</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/bower/jquery/dist/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/bower/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
 </html>

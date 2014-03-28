@@ -3,7 +3,7 @@
 <head>
 
   <meta charset="utf-8">
-  <title>How It Works | Streamlyne Website</title>
+  <title>How It Works | Streamlyne</title>
   <meta name="keywords" content="made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,17 +15,16 @@
     <meta property="og:description" content="made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/bower/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/bower/animate.css/animate.min.css">
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
   
-
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bower/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/lava-theme.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/custom-styles.css">
 
-  <script src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <script src="assets/bower/modernizr/modernizr.js"></script>
 
   <!-- Fav and touch icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/apple-touch-icon-144-precomposed.png">
@@ -42,24 +41,26 @@
 
     
 
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </a>
-
-        <a class="brand" href="index.html">
-            
-            <h2 style="padding:0px; margin:0px;">
+      </button>
+      <a class="navbar-brand" href="#">
+        <h2 style="padding:0px; margin:0px;">
             Streamlyne
-            </h2>
+          </h2>
         </a>
-      
-      <div class="nav-collapse collapse">
-        <ul class="nav pull-right">
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
             
             <li>
               <a href="analytics.html">Analytics</a>
@@ -90,10 +91,11 @@
             </li>
             
         </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </div>
-</div>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
 
     <div class="" role="main">
 
@@ -101,73 +103,139 @@
 
 <div class="container">
 
-<div class="row">
+	<div class="row">
 
-<div class="col-md-6">
+		<div class="col-md-6">
+			<img src="http://s177976.gridserver.com/uploads/general/how-it-works-diagram.png">
+		</div>
 
-</div>
+		<div class="col-md-6">
+			<h3>Deployment</h3>
 
-<div class="col-md-6">
-<h3>Deployment</h3>
-<p>
-So, how does Streamlyne work?
+			<br>
+			<h4>So, how does Streamlyne work?</h4>
+			<p>We take all the raw, unstructured, user generated data from three separate silos:</p>
+			<ul>
+				<li>Asset Management Systems (IBM, SAP, Oracle, OpenText); </li>
+				<li>Distributed Control Systems (Invensys, Honeywell, Siemens)</li> 
+				<li>Operator user generated information/input</li>
+			</ul>
+			<p>We then take this complex data and run it through Streamlyne’s Custom Analytics Platform and generate simple and user-friendly graphic images that display new trends and analytics for operators and managers.
+			</p>
 
-We take all the raw, unstructured, user generated data from three separate silos: 
-Asset Management Systems (IBM, SAP, Oracle, OpenText); 
-Distributed Control Systems (Invensys, Honeywell, Siemens) 
-Operator user generated information/input
-We then take this complex data and run it through Streamlyne’s Custom Analytics Platform and generate simple and user-friendly graphic images that display new trends and analytics for operators and managers.
+			<br>
+			<h4>VP’s and Manager  Capabilities</h4>
+			<p>Now VP’s and managers can view all system and user generated information - for one or multi-site plants.</p>
 
-VP’s and Manager  Capabilities
-Now VP’s and managers can view all system and user generated information - for one or multi-site plants.
+			<br>
+			<h4>Operator Capabilities</h4>
+			<p>Operators now have a user-friendly iOS mobile application so they can view and input real-time asset information right at their fingertips.
+			</p>
 
-Operator Capabilities
-Operators now have a user-friendly iOS mobile application so they can view and input real-time asset information right at their fingertips.
-</p>
-</div>
+		</div>
 
+	</div>
 </div>
 
 <br>
+<br>
 
-<div class="row">
+<div>
+	
+	<section>
+		<div class="container">
+			<div class="row">
 
-<div class="col-md-6">
+				<div class="col-md-6">
+					<h3>API/Custom Integration</h3>
+					<p>We can connect to all major DCS and Asset Management System API’s.</p>
+
+					<h4>Distributed Control Systems (sensors)</h4>
+					<p>We can connect with:</p>
+					<ul>
+						<li>Invensys</li>
+						<li>Honeywell</li>
+						<li>Siemens</li>
+						<li>ABB</li>
+					</ul>
+
+					<h4>Asset Management Systems</h4>
+					<p>We can connect with:</p>
+					<ul>
+						<li>IBM Maximo</li>
+						<li>SAP</li>
+						<li>Oracle</li>
+						<li>OpenText</li>
+					</ul>
+
+				</div>
+
+				<div class="col-md-6">
+
+				</div>
+			</div>
+		</div></section>
+
+	</div>
 
 </div>
 
-<div class="col-md-6">
-<h3>API/Custom Integration</h3>
-<p>
-We can connect to all major DCS and Asset Management System API’s.
+    
 
-Distributed Control Systems (sensors)
-We can connect with:
-Invensys
-Honeywell
-Siemens
-ABB
+    
+<section id="footer">
+  <div class="container">
+    
 
+    <ul class="nav navbar-nav">
+	    
+	    <li>
+	      <a href="analytics.html">Analytics</a>
+	    </li>
+	    
+	    <li>
+	      <a href="blog.html">Blog</a>
+	    </li>
+	    
+	    <li>
+	      <a href="company.html">Company</a>
+	    </li>
+	    
+	    <li>
+	      <a href="early-adopter.html">Early Adopter</a>
+	    </li>
+	    
+	    <li>
+	      <a href="features.html">Features</a>
+	    </li>
+	    
+	    <li class="active">
+	      <a href="how-it-works.html">How It Works</a>
+	    </li>
+	    
+	    <li>
+	      <a href="index.html">Home</a>
+	    </li>
+	    
+	</ul>
+	
+	<br>
 
-Asset Management Systems
-We can connect with:
-IBM Maximo
-SAP
-Oracle
-OpenText
-</p>
-</div>
-
-</div>
-
-</div>
-
+    <div class="row">
+      <div class="span12 text-center">
+      	<p>&copy; 2014 Streamlyne Technologies Limited</p>
+      </div>
     </div>
 
+  </div>
+</section>
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="assets/bower/jquery/dist/jquery.min.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/bower/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>

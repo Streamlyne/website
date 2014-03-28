@@ -3,7 +3,7 @@
 <head>
 
   <meta charset="utf-8">
-  <title>Early Adopter | Streamlyne Website</title>
+  <title>Early Adopter | Streamlyne</title>
   <meta name="keywords" content="made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,17 +15,16 @@
     <meta property="og:description" content="made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/bower/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/bower/animate.css/animate.min.css">
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
   
-
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bower/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/lava-theme.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/custom-styles.css">
 
-  <script src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <script src="assets/bower/modernizr/modernizr.js"></script>
 
   <!-- Fav and touch icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/apple-touch-icon-144-precomposed.png">
@@ -42,24 +41,26 @@
 
     
 
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </a>
-
-        <a class="brand" href="index.html">
-            
-            <h2 style="padding:0px; margin:0px;">
+      </button>
+      <a class="navbar-brand" href="#">
+        <h2 style="padding:0px; margin:0px;">
             Streamlyne
-            </h2>
+          </h2>
         </a>
-      
-      <div class="nav-collapse collapse">
-        <ul class="nav pull-right">
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
             
             <li>
               <a href="analytics.html">Analytics</a>
@@ -90,61 +91,125 @@
             </li>
             
         </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </div>
-</div>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
 
     <div class="" role="main">
 
       
 
-<div class="container">
+<div class="early-adopter-page">
 
-<div class="lead">
-<p>
-We are looking for innovative companies in the oil, natural gas, petrochemical, and electrical industries who would like to become  a part of the Streamlyne Early Adopter Program. 
-</p>
+	<div class="container heading">
+		<br>
 
-<br>
+		<h1>
+			We are looking for innovative companies in the oil, natural gas, petrochemical, and electrical industries who would like to become  a part of the Streamlyne Early Adopter Program. 
+		</h1>
 
-<p>Your company is, or aspires to be:
-<ul>
-<li>An innovator in your sector that values cutting edge technology</li>
-<li>Has an entrepreneurial mindset</li>
-<li>Would like to help create new industry standards</li>
-<li>Discover new ways to learn about analytics, algorithms, insights, and predictions to improve the efficiency of your company and the expectations of your customers.</li>
-<li>Eager to learn more about technology, industry trends, and entrepreneurial “outside of the box” development.</li>
-</ul>
-</p>
+	</div>
 
-<br>
+	<br>
 
-<p>
-Early Adopter Program Criteria:
-<ul>
-<li>Large oil, natural gas, petrochemical, or electrical company</li>
-<li>Have Distributed Control Systems (Sensors), Asset Management Systems (IBM Maximo, SAP, Oracle, OpenText) that we can integrate or connect via their REST API</li>
-<li>Able to provide a large data-set from your plant management systems for testing in the Streamlyne custom analytics platform.</li>
-<li>Willing to allow Streamlyne to work with at least one plant, collecting feedback from operators and managers to help with product development.</li>
-<li>Able to be a referenceable customer for marketing purposes.</li>
-</ul>
-</p>
+	<section>
+		<div class="container">
+			<br>
 
-<p>
-If this sounds like your company, then we would love to work with you. Please contact Todd Murphy at todd@streamlyne.co
-</p>
+			<p>Your company is, or aspires to be:
+				<ul>
+					<li>An innovator in your sector that values cutting edge technology</li>
+					<li>Has an entrepreneurial mindset</li>
+					<li>Would like to help create new industry standards</li>
+					<li>Discover new ways to learn about analytics, algorithms, insights, and predictions to improve the efficiency of your company and the expectations of your customers.</li>
+					<li>Eager to learn more about technology, industry trends, and entrepreneurial “outside of the box” development.</li>
+				</ul>
+			</p>
+			<br>
+
+		</div>
+	</section>
+
+	<br>
+
+	<div class="container">
+		<p>
+			Early Adopter Program Criteria:
+			<ul>
+				<li>Large oil, natural gas, petrochemical, or electrical company</li>
+				<li>Have Distributed Control Systems (Sensors), Asset Management Systems (IBM Maximo, SAP, Oracle, OpenText) that we can integrate or connect via their REST API</li>
+				<li>Able to provide a large data-set from your plant management systems for testing in the Streamlyne custom analytics platform.</li>
+				<li>Willing to allow Streamlyne to work with at least one plant, collecting feedback from operators and managers to help with product development.</li>
+				<li>Able to be a referenceable customer for marketing purposes.</li>
+			</ul>
+		</p>
+
+		<p>
+			If this sounds like your company, then we would love to work with you. Please contact Todd Murphy at todd@streamlyne.co
+		</p>
+	</div>
 
 </div>
 
-</div>
 
     </div>
 
+    
+<section id="footer">
+  <div class="container">
+    
+
+    <ul class="nav navbar-nav">
+	    
+	    <li>
+	      <a href="analytics.html">Analytics</a>
+	    </li>
+	    
+	    <li>
+	      <a href="blog.html">Blog</a>
+	    </li>
+	    
+	    <li>
+	      <a href="company.html">Company</a>
+	    </li>
+	    
+	    <li class="active">
+	      <a href="early-adopter.html">Early Adopter</a>
+	    </li>
+	    
+	    <li>
+	      <a href="features.html">Features</a>
+	    </li>
+	    
+	    <li>
+	      <a href="how-it-works.html">How It Works</a>
+	    </li>
+	    
+	    <li>
+	      <a href="index.html">Home</a>
+	    </li>
+	    
+	</ul>
+	
+	<br>
+
+    <div class="row">
+      <div class="span12 text-center">
+      	<p>&copy; 2014 Streamlyne Technologies Limited</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="assets/bower/jquery/dist/jquery.min.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/bower/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>

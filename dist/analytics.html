@@ -3,7 +3,7 @@
 <head>
 
   <meta charset="utf-8">
-  <title>Analytics | Streamlyne Website</title>
+  <title>Analytics | Streamlyne</title>
   <meta name="keywords" content="made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,17 +15,16 @@
     <meta property="og:description" content="made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/bower/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/bower/animate.css/animate.min.css">
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
   
-
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bower/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/lava-theme.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/custom-styles.css">
 
-  <script src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <script src="assets/bower/modernizr/modernizr.js"></script>
 
   <!-- Fav and touch icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/apple-touch-icon-144-precomposed.png">
@@ -42,24 +41,26 @@
 
     
 
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </a>
-
-        <a class="brand" href="index.html">
-            
-            <h2 style="padding:0px; margin:0px;">
+      </button>
+      <a class="navbar-brand" href="#">
+        <h2 style="padding:0px; margin:0px;">
             Streamlyne
-            </h2>
+          </h2>
         </a>
-      
-      <div class="nav-collapse collapse">
-        <ul class="nav pull-right">
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
             
             <li class="active">
               <a href="analytics.html">Analytics</a>
@@ -90,66 +91,153 @@
             </li>
             
         </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </div>
-</div>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
 
     <div class="" role="main">
 
       
 
-<div class="container">
+<div class="analytics-page">
 
-<div class="lead">
+	<br>
 
-<p>Streamlyne’s Custom Scenario Builder is a self-service tool that allows you to build relationships and scenarios between your sensors, assets, and user generated data.</p>
+	<div class="container">
 
-<br>
+		<p>Streamlyne’s Custom Scenario Builder is a self-service tool that allows you to build relationships and scenarios between your sensors, assets, and user generated data.</p>
 
-<div class="row">
+		<br>
 
-<div class="col-md-6">
-<ul>
-<li>
-Dashboard - This is the main landing area for operators and managers to see an instant snapshot of recent alerts, view scenarios, view  custom reports, and to read or leave comments to communicate with operators and managers. 
-</li>
+		<div class="row">
 
-<li>
-Alerts - Instantly be alerted when assets are reaching maximum or minimum thresholds, and see what other assets may be affected.
-</li>
+			<div class="col-md-6">
 
-<li>
-Streamlyne Scenario Builder - Simply build relationships (aka “links”) between sensors, assets, and user generated content to create your own monitoring system to understand when critical events happen before they happen. 
-</li>
+				<h3>Dashboard</h3>
+				<p>This is the main landing area for operators and managers to see an instant snapshot of recent alerts, view scenarios, view  custom reports, and to read or leave comments to communicate with operators and managers. 
+				</p>
 
-<li>
-Custom Reports - Create custom automated reports of scenarios for the people who need to know when things happen.
-</li>
+				<h3>Alerts</h3>
+				<p>Instantly be alerted when assets are reaching maximum or minimum thresholds, and see what other assets may be affected.
+				</p>
 
-<li>
-Comments - Leave and view comments by fellow operators so everyone is always on top of the latest developments and scenarios.
-</li>
+				<h3>Streamlyne Scenario Builder</h3>
+				<p>
+					Simply build relationships (aka “links”) between sensors, assets, and user generated content to create your own monitoring system to understand when critical events happen before they happen. 
+				</p>
 
-</ul>
-</div>
+				<h3>Custom Reports</h3>
+				<p>
+					Create custom automated reports of scenarios for the people who need to know when things happen.
+				</p>
 
-<div class="col-md-6">
+				<h3>Comments</h3>
+				<p>
+					Leave and view comments by fellow operators so everyone is always on top of the latest developments and scenarios.
+				</p>
 
-</div>
+			</div>
 
-</div>
+			<div class="right-column col-md-6">
+				<img src="http://www.theiphonemom.com/wp-content/uploads/2012/10/imac.jpeg">
+			</div>
 
-</div>
+		</div>
+	</div>
+
+	<br>
+
+	<section>
+
+		<div class="container">
+
+			<h3>Equipment Failure</h3>
+
+			<h4>Example 1</h4>
+
+			<img src="http://blog.moveableonline.com/assets/2014/01/iMac-Mobile-Analytics-1024x768.png">
+
+			<p>this is a test</p>
+
+		</div>
+
+	</section>
+
+	<br>
+
+	<div class="container">
+
+		<h3>Equipment Failure</h3>
+
+		<h4>Example 2</h4>
+
+		<img src="http://blog.moveableonline.com/assets/2014/01/iMac-Mobile-Analytics-1024x768.png">
+
+		<p>this is a test</p>
+
+	</div>
+		
 
 </div>
 
     </div>
 
+    
+<section id="footer">
+  <div class="container">
+    
+
+    <ul class="nav navbar-nav">
+	    
+	    <li class="active">
+	      <a href="analytics.html">Analytics</a>
+	    </li>
+	    
+	    <li>
+	      <a href="blog.html">Blog</a>
+	    </li>
+	    
+	    <li>
+	      <a href="company.html">Company</a>
+	    </li>
+	    
+	    <li>
+	      <a href="early-adopter.html">Early Adopter</a>
+	    </li>
+	    
+	    <li>
+	      <a href="features.html">Features</a>
+	    </li>
+	    
+	    <li>
+	      <a href="how-it-works.html">How It Works</a>
+	    </li>
+	    
+	    <li>
+	      <a href="index.html">Home</a>
+	    </li>
+	    
+	</ul>
+	
+	<br>
+
+    <div class="row">
+      <div class="span12 text-center">
+      	<p>&copy; 2014 Streamlyne Technologies Limited</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="assets/bower/jquery/dist/jquery.min.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/bower/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>

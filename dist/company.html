@@ -3,7 +3,7 @@
 <head>
 
   <meta charset="utf-8">
-  <title>Company | Streamlyne Website</title>
+  <title>Company | Streamlyne</title>
   <meta name="keywords" content="made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,17 +15,16 @@
     <meta property="og:description" content="made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/bower/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/bower/animate.css/animate.min.css">
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
   
-
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bower/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/lava-theme.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/custom-styles.css">
 
-  <script src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <script src="assets/bower/modernizr/modernizr.js"></script>
 
   <!-- Fav and touch icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/apple-touch-icon-144-precomposed.png">
@@ -42,24 +41,26 @@
 
     
 
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </a>
-
-        <a class="brand" href="index.html">
-            
-            <h2 style="padding:0px; margin:0px;">
+      </button>
+      <a class="navbar-brand" href="#">
+        <h2 style="padding:0px; margin:0px;">
             Streamlyne
-            </h2>
+          </h2>
         </a>
-      
-      <div class="nav-collapse collapse">
-        <ul class="nav pull-right">
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
             
             <li>
               <a href="analytics.html">Analytics</a>
@@ -90,10 +91,11 @@
             </li>
             
         </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </div>
-</div>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
 
     <div class="" role="main">
 
@@ -103,77 +105,138 @@
 
 <div>
 
-    <div>
-    <h3>Todd Murphy, CEO</h3>
-    <p>Todd is passionate about building long term customer relationships, creating an amazing product and user experience, and using innovative technology to improve the daily lives of manufacturing operations. Todd is an experienced executive who is skilled at building top quality teams, bringing new products to market, and leading by example. Todd&#39;s inspiration for Streamlyne stems from his extensive background in manufacturing operations after spending three years in McCain Foods Ltd. Production Management Leadership Program. </p>
-<p>Previously, Todd was the CEO and co-founder of MedRunner, an electronic prescription platform that connected national pharmacy chains, major insurance companies, pharmaceutical companies, and physicians. For three and a half years, Todd was responsible for all aspects of the company operations, strategic partnerships, and raising $2.0 million in funding. </p>
-<p>Todd received his BComm from Saint Mary&#39;s University and MBA from the University of New Brunswick. </p>
-<p>In his free time, Todd likes to watch and play all sports, mentor other entrepreneurs and start-ups, speak to students, and tries to win his fantasy football every year. </p>
-<p>If you would like to get in touch, please contact me on my cell at (902) 210 - 6735.</p>
+</div>
+
+<h3 class="text-center">Our Team</h3>
+<br>
+
+<div class="row">
+
+    <div class="col-md-4">
+    <img class="img-thumbnail" src="assets/img/todd.jpg">
+    <h3>Todd Murphy</h3>
+    <h4>CEO</h4>
+    <p>
+    	<a href="">LinkedIn</a>
+    	<a href="">Twitter</a>
+    	<a href="">GitHub</a>
+    	<a href="mailto:">Email</a>
+    </p>
+    <p>src/content/todd.md</p>
+    </div>
+
+    <div class="col-md-4">
+    <img class="img-thumbnail" src="assets/img/dawson.jpg">
+    <h3>Dawson Reid</h3>
+    <h4>CTO</h4>
+    <p>
+    	<a href="">LinkedIn</a>
+    	<a href="">Twitter</a>
+    	<a href="">GitHub</a>
+    	<a href="mailto:">Email</a>
+    </p>
+    <p>src/content/dawson.md</p>
+    </div>
+
+    <div class="col-md-4">
+    <img class="img-thumbnail" src="assets/img/glavin.jpg">
+    <h3>Glavin Wiechert</h3>
+    <h4>VP of Engineering</h4>
+    <p>
+    	<a href="">LinkedIn</a>
+    	<a href="">Twitter</a>
+    	<a href="">GitHub</a>
+    	<a href="mailto:">Email</a>
+    </p>
+    <p>src/content/glavin.md</p>
+    </div>
+
+    <div class="col-md-4">
+    <img class="img-thumbnail" src="assets/img/neil.jpg">
+    <h3>Neil Cody</h3>
+    <h4>VP of Sales and Business Development</h4>
+    <p>
+    	<a href="">LinkedIn</a>
+    	<a href="">Twitter</a>
+    	<a href="">GitHub</a>
+    	<a href="mailto:">Email</a>
+    </p>
+    <p>src/content/neil.md</p>
+    </div>
+
+    <div class="col-md-4">
+    <img class="img-thumbnail" src="assets/img/todd.jpg">
+    <h3>Mathew Kallada</h3>
+    <h4>Software Engineere</h4>
+    <p>
+    	<a href="">LinkedIn</a>
+    	<a href="">Twitter</a>
+    	<a href="">GitHub</a>
+    	<a href="mailto:">Email</a>
+    </p>
+    <p>src/content/mathew.md</p>
+    </div>
+
+</div>
+
+</div>
 
     </div>
-    <br>
 
-    <div>
-    <h3>Dawson Reid, CTO</h3>
-    <p>Todd is passionate about building long term customer relationships, creating an amazing product and user experience, and using innovative technology to improve the daily lives of manufacturing operations. Todd is an experienced executive who is skilled at building top quality teams, bringing new products to market, and leading by example. Todd&#39;s inspiration for Streamlyne stems from his extensive background in manufacturing operations after spending three years in McCain Foods Ltd. Production Management Leadership Program. </p>
-<p>Previously, Todd was the CEO and co-founder of MedRunner, an electronic prescription platform that connected national pharmacy chains, major insurance companies, pharmaceutical companies, and physicians. For three and a half years, Todd was responsible for all aspects of the company operations, strategic partnerships, and raising $2.0 million in funding. </p>
-<p>Todd received his BComm from Saint Mary&#39;s University and MBA from the University of New Brunswick. </p>
-<p>In his free time, Todd likes to watch and play all sports, mentor other entrepreneurs and start-ups, speak to students, and tries to win his fantasy football every year. </p>
-<p>If you would like to get in touch, please contact me on my cell at (902) 210 - 6735.</p>
-
-    </div>
-    <br>
-
-    <div>
-    <h3>Glavin Wiechert, VP of Engineering</h3>
-    <p>Todd is passionate about building long term customer relationships, creating an amazing product and user experience, and using innovative technology to improve the daily lives of manufacturing operations. Todd is an experienced executive who is skilled at building top quality teams, bringing new products to market, and leading by example. Todd&#39;s inspiration for Streamlyne stems from his extensive background in manufacturing operations after spending three years in McCain Foods Ltd. Production Management Leadership Program. </p>
-<p>Previously, Todd was the CEO and co-founder of MedRunner, an electronic prescription platform that connected national pharmacy chains, major insurance companies, pharmaceutical companies, and physicians. For three and a half years, Todd was responsible for all aspects of the company operations, strategic partnerships, and raising $2.0 million in funding. </p>
-<p>Todd received his BComm from Saint Mary&#39;s University and MBA from the University of New Brunswick. </p>
-<p>In his free time, Todd likes to watch and play all sports, mentor other entrepreneurs and start-ups, speak to students, and tries to win his fantasy football every year. </p>
-<p>If you would like to get in touch, please contact me on my cell at (902) 210 - 6735.</p>
-
-    </div>
-    <br>
-
-    <div>
-    <h3>Neil Cody, VP of Sales and Business Development</h3>
-    <p>Todd is passionate about building long term customer relationships, creating an amazing product and user experience, and using innovative technology to improve the daily lives of manufacturing operations. Todd is an experienced executive who is skilled at building top quality teams, bringing new products to market, and leading by example. Todd&#39;s inspiration for Streamlyne stems from his extensive background in manufacturing operations after spending three years in McCain Foods Ltd. Production Management Leadership Program. </p>
-<p>Previously, Todd was the CEO and co-founder of MedRunner, an electronic prescription platform that connected national pharmacy chains, major insurance companies, pharmaceutical companies, and physicians. For three and a half years, Todd was responsible for all aspects of the company operations, strategic partnerships, and raising $2.0 million in funding. </p>
-<p>Todd received his BComm from Saint Mary&#39;s University and MBA from the University of New Brunswick. </p>
-<p>In his free time, Todd likes to watch and play all sports, mentor other entrepreneurs and start-ups, speak to students, and tries to win his fantasy football every year. </p>
-<p>If you would like to get in touch, please contact me on my cell at (902) 210 - 6735.</p>
-
-    </div>
-    <br>
-
-    <div>
-    <h3>Mathew Kallada, Software Engineere</h3>
     
+<section id="footer">
+  <div class="container">
+    
+
+    <ul class="nav navbar-nav">
+	    
+	    <li>
+	      <a href="analytics.html">Analytics</a>
+	    </li>
+	    
+	    <li>
+	      <a href="blog.html">Blog</a>
+	    </li>
+	    
+	    <li class="active">
+	      <a href="company.html">Company</a>
+	    </li>
+	    
+	    <li>
+	      <a href="early-adopter.html">Early Adopter</a>
+	    </li>
+	    
+	    <li>
+	      <a href="features.html">Features</a>
+	    </li>
+	    
+	    <li>
+	      <a href="how-it-works.html">How It Works</a>
+	    </li>
+	    
+	    <li>
+	      <a href="index.html">Home</a>
+	    </li>
+	    
+	</ul>
+	
+	<br>
+
+    <div class="row">
+      <div class="span12 text-center">
+      	<p>&copy; 2014 Streamlyne Technologies Limited</p>
+      </div>
     </div>
-    <br>
 
-</div>
+  </div>
+</section>
 
-<hr>
-
-<div>
-Streamlyne Technologies Ltd
-111 Pebblecreek Crescent, Suite 208
-Dartmouth, Nova Scotia
-B2W 0L1
-(902) 210-6735
-info@streamlyne.co
-</div>
-
-</div>
-
-    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="assets/bower/jquery/dist/jquery.min.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/bower/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>
