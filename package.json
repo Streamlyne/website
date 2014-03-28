@@ -1,32 +1,50 @@
 {
-  "name": "sl-website",
-  "version": "0.0.0",
-  "description": "",
-  "main": "Gruntfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "streamlyne-website",
+ "description": "Streamlyne's website..",
+  "version": "0.1.0",
+  "homepage": "https://github.com/Glavin001/streamlyne-website",
+  "author": {
+    "name": "Glavin Wiechert",
+    "url": "http://github.com/Glavin001/"
   },
   "repository": {
     "type": "git",
-    "url": "git@git.streamlyne.co:streamlyne/sl-website.git"
+    "url": "git://github.com/Glavin001/streamlyne-website.git"
   },
-  "keywords": [
-    "Streamlyne"
-  ],
-  "author": "Dawson Reid & Glavin Wiechert",
-  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/Glavin001/streamlyne-website/issues"
+  },
+  "engines": {
+    "node": ">=0.8"
+  },
+  "scripts": {
+    "test": "grunt assemble"
+  },
   "devDependencies": {
-    "grunt-cli": "~0.1.11",
-    "grunt": "~0.4.2",
-    "grunt-open": "~0.2.2",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-uglify": "~0.2.7",
-    "grunt-express": "~1.2.1",
-    "matchdep": "~0.3.0",
-    "grunt-contrib-jade": "~0.8.0",
-    "grunt-contrib-less": "~0.8.3",
-    "browserify": "~2.36.1",
-    "grunt-browserify": "~1.2.12",
-    "grunt-contrib-copy": "~0.4.1"
-  }
+    "assemble": "~0.4.37",
+    "grunt": "~0.4.4",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-connect": "~0.7.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "load-grunt-tasks": "~0.4.0",
+    "time-grunt": "~0.3.1",
+    "assemble-contrib-anchors": "*",
+    "assemble-contrib-permalinks": "*",
+    "assemble-contrib-sitemap": "*",
+    "assemble-contrib-toc": "*"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/Glavin001/streamlyne-website/blob/master/LICENSE-MIT"
+    }
+  ],
+  "keywords": [
+    "assemble",
+    "templates",
+    "handlebars",
+    "site generator",
+    "site builder",
+    "grunt"
+  ]
 }

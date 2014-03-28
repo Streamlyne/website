@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Todd Murphy",
+        "title": "CEO",
+        "avatar": "",
+        "twitter": "",
+        "linkedin": "",
+        "bio": "src/content/todd.md"
+    },
+    {
+        "name": "Dawson Reid",
+        "title": "CTO",
+        "avatar": "",
+        "twitter": "",
+        "linkedin": "",
+        "bio": "src/content/todd.md"
+    },
+    {
+        "name": "Glavin Wiechert",
+        "title": "VP of Engineering",
+        "avatar": "",
+        "twitter": "",
+        "linkedin": "",
+        "bio": "src/content/todd.md"
+    },
+    {
+        "name": "Neil Cody",
+        "title": "VP of Sales and Business Development",
+        "avatar": "",
+        "twitter": "",
+        "linkedin": "",
+        "bio": "src/content/todd.md"
+    },
+    {
+        "name": "Mathew Kallada",
+        "title": "Software Engineere",
+        "avatar": "",
+        "twitter": "",
+        "linkedin": "",
+        "bio": "src/content/mathew.md"
+    }
+]

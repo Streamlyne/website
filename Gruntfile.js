@@ -1,185 +1,108 @@
 /*
-Dawson Reid
-Glavin Wiechert
-*/
+ * Generated on 2014-03-28
+ * generator-assemble v0.4.11
+ * https://github.com/assemble/generator-assemble
+ *
+ * Copyright (c) 2014 Hariadi Hinta
+ * Licensed under the MIT license.
+ */
+
+'use strict';
+
+// # Globbing
+// for performance reasons we're only matching one level down:
+// '<%= config.src %>/templates/pages/{,*/}*.hbs'
+// use this if you want to match all subfolders:
+// '<%= config.src %>/templates/pages/**/*.hbs'
 
 module.exports = function(grunt) {
 
-     require('matchdep').filterDev('grunt-*').forEach(
-             grunt.loadNpmTasks);
+  require('time-grunt')(grunt);
 
+  // Project configuration.
+  grunt.initConfig({
 
-    // Project configuration.
-    grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
+    config: {
+      src: 'src',
+      dist: 'dist'
+    },
 
-
-        // server
-        express: {
-            all: {
-                options: {
-                    port: 1234, 
-                    hostname: '0.0.0.0',
-                    bases: ['www'],
-                    livereload: true
-                }
-            }
+    watch: {
+      assemble: {
+        files: ['<%= config.src %>/{content,data,templates}/{,*/}*.{md,hbs,yml}'],
+        tasks: ['assemble']
+      },
+      livereload: {
+        options: {
+          livereload: '<%= connect.options.livereload %>'
         },
-        open: {
-            all: {
-                path: 'http://localhost:1234/index.html'
-            }
-        },
+        files: [
+          '<%= config.dist %>/{,*/}*.html',
+          '<%= config.dist %>/assets/{,*/}*.css',
+          '<%= config.dist %>/assets/{,*/}*.js',
+          '<%= config.dist %>/assets/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+        ]
+      }
+    },
 
-        // Copy
-        copy: {
-            main: {
-                files: [ 
-                {
-                    src: 'img/*',
-                    dest: 'www/'
-                }, 
-                {
-                    src: 'font/*',
-                    dest: 'www/'
-                }
-                ]
-            }
-        },
-
-        // compile 
-        less: {
-            compile: {
-                files: [
-                {
-                    'www/style.css': [ 'less/*.less' ]
-                },
-                {
-                  cwd: "css",
-                  src: "**/*.css",
-                  dest: "www/css",
-                  expand: true
-                }]
-            }
-        },
-        jade: {
-            compile: {
-                options: {
-                    client: false,
-                    pretty: true
-                },
-                files: [ {
-                  cwd: "jade",
-                  src: "**/*.jade",
-                  dest: "www/",
-                  expand: true,
-                  ext: ".html"
-                } ]
-            }
-        },
-        browserify: {
-            compile: {
-                files: [ 
-                    {
-                        'www/main.js': [ 'js/main.js' ]
-                    }
-                ]
-            }
-        }, 
-        uglify: {
-          compile: {
-            files: [{
-                expand: true,
-                src: '**/*.js',
-                dest: 'www/js',
-                cwd: 'js'
-            }]
-          }
-        },
-
-        // file watchers
-        watch: {
-            options: {
-                livereload: true
-            },
-
-            copy: {
-                files: [
-                    'img/*'
-                ],
-                tasks: [
-                    'copy:main'
-                ]
-            },
-
-            less: {
-                files: [
-                    'less/*.less',
-                    'css/*.css'
-                ],
-                tasks: [
-                    'less:compile'
-                ]
-            },
-            jade: {
-                files: [
-                    'jade/*.jade'
-                ],
-                tasks: [
-                    'jade:compile'
-                ]
-            },
-            js: {
-                files: [
-                    'js/*.js'
-                ],
-                tasks: [
-                    'uglify:compile',
-                    'browserify:compile'
-                ]
-            },
-
-            // server reload
-            server: {
-                options: {
-                    nospawn: true
-                },
-                files: [
-                    'www/*.html',
-                    'www/main.js',
-                    'www/style.css',
-                    'www/bower/*',
-                    'www/static/*'
-                ], 
-                tasks: [
-                    'express'
-                ]
-            }
-
+    connect: {
+      options: {
+        port: 9000,
+        livereload: 35729,
+        // change this to '0.0.0.0' to access the server from outside
+        hostname: 'localhost'
+      },
+      livereload: {
+        options: {
+          open: true,
+          base: [
+            '<%= config.dist %>'
+          ]
         }
+      }
+    },
+
+    assemble: {
+      pages: {
+        options: {
+          flatten: true,
+          assets: '<%= config.dist %>/assets',
+          layout: '<%= config.src %>/templates/layouts/default.hbs',
+          data: '<%= config.src %>/data/*.{json,yml}',
+          partials: '<%= config.src %>/templates/partials/*.hbs',
+          plugins: ['assemble-contrib-anchors','assemble-contrib-permalinks','assemble-contrib-sitemap','assemble-contrib-toc'],
+        },
+        files: {
+          '<%= config.dist %>/': ['<%= config.src %>/templates/pages/*.hbs']
+        }
+      }
+    },
+
+    // Before generating any new files,
+    // remove any previously-created files.
+    clean: ['<%= config.dist %>/**/*.{html,xml}']
+
   });
 
-  grunt.registerTask('compile', [
-    'less:compile',
-    'uglify:compile',
-    'browserify:compile',
-    'jade:compile',
-    'copy:main'
-  ]);
+  grunt.loadNpmTasks('assemble');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  // Default task(s).
   grunt.registerTask('server', [
-    'express',
-    'open',
+    'clean',
+    'assemble',
+    'connect:livereload',
     'watch'
   ]);
-  grunt.registerTask('default', [
-    'compile',
-    'server'
+
+  grunt.registerTask('build', [
+    'clean',
+    'assemble'
   ]);
 
-  //grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.registerTask('default', [
+    'build'
+  ]);
 
-  
 };
-

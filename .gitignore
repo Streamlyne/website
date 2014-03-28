@@ -1,31 +1,22 @@
-# Vim
-*~
-*.swp
-*.swo
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.yo-rc.json
 
-# Mac
-.DS_Store
-.AppleDouble
-.LSOverride
-# Icon must ends with two \r.
-Icon
-# Thumbnails
-._*
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
+pids
+logs
+results
 
-*.pyc
-.idea/
-dist/
-www
-
-site/css/
-site/js/
-site/*.html
-!site/sitemap.html
-
+npm-debug.log
 node_modules
+
+*.sublime-*
 
 products_WB049M4SF
 
+www/
