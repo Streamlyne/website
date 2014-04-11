@@ -14,11 +14,25 @@ body *,
    font-weight: 300;
 }
 
-.one {
-	background: url:(../header1.jpng) no-repeat center 75%;
-	background-size: cover;
+img { width:100%; height:auto; }
+
+ul {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
 }
 
+.carousel-fade {
+	/*background-color: #1e110a;*/
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 17, 10, 0.00)), to(rgba(30, 17, 9, 0.80)));
+	background-image: -webkit-linear-gradient(top, rgba(30, 17, 10, 0.00), rgba(30, 17, 9, 0.80));
+	background-image: -moz-linear-gradient(top, rgba(30, 17, 10, 0.00), rgba(30, 17, 9, 0.80));
+	background-image: -o-linear-gradient(top, rgba(30, 17, 10, 0.00), rgba(30, 17, 9, 0.80));
+	background-image: -ms-linear-gradient(top, rgba(30, 17, 10, 0.00), rgba(30, 17, 9, 0.80));
+	background-image: linear-gradient(top, rgba(30, 17, 10, 0.00), rgba(30, 17, 9, 0.80));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#1e110a', EndColorStr='#1e1109');
+	height:100%;
+}
 .carousel-control,
 .carousel-control.right,
 .carousel-control.left {
@@ -26,16 +40,41 @@ body *,
 	margin-top: 20%;
 
 	background: none;
-	color: rgb(255,117,90);
+	color: #48dce4;
 	font-size: 7em;
 }
 
 .carousel-caption {
 	margin-top: 20%;
+	max-width:100%;
+}
+a.btn-main {
+	background: #48dce4;
+}
+a.btn-main:hover {
+	background: #26292b;
+}
+.carousel-caption h1 {
+	font-weight:700;
+}
+.carousel-caption p em {
+	font-style:normal;
 }
 
 p.lead {
 	color: #FFFFFF;
+}
+
+.feature img {
+	max-width:600px; width:100%; height:auto;
+}
+
+@media (min-width:460px){
+
+.feature {
+	float:left;
+}
+
 }
 
 .navbar-inverse {
@@ -70,12 +109,34 @@ a:hover {
 
 section {
 	-webkit-font-smoothing: antialiased;
-	background: #F7F8FB;
+	background: #25292b;
 	border: 1px solid #EAEDF7;
 	box-shadow: inset rgba(100, 100, 100, 0.25) 0 1px 1px;
+	padding-bottom:40px;
+	
 	/*
 	margin-top: 60px;
 	*/
+}
+section p {color: #fff !important;}
+section h3 {
+	margin-top:40px;
+	color: #fff !important;
+}
+section p, section ul { 
+	color:#7a868d; 
+}
+section img {
+	padding-bottom: 30px;
+}
+section#plantcompare {
+	/* background: url(../img/secbg-1.jpg) 50% 0 repeat fixed; */
+	
+}
+
+h3 {
+	margin-bottom: 30px;
+	font-weight:700;
 }
 
 /* Page Specific */
@@ -86,7 +147,9 @@ section {
 	box-shadow: inset rgba(100, 100, 100, 0.25) 0px 1px 1px;
 	*/
 }
-
 .early-adopter-page .heading h1 {
 	color: #FF851B;
+	font-weight:900;
 }
+
+

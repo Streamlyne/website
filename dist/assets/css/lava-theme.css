@@ -18,10 +18,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1 {
-  font-weight: 800;
+  font-weight: 900;
   font-size: 62px;
   line-height: 60px;
-  text-transform: uppercase;
   color: #FFFFFF;
   margin: 0;
   text-shadow: 0 1px 1px rgba(0,0,0,.4);
