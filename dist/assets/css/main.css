@@ -69,13 +69,6 @@ p.lead {
 	max-width:600px; width:100%; height:auto;
 }
 
-@media (min-width:460px){
-
-.feature {
-	float:left;
-}
-
-}
 
 .navbar-inverse {
    	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
