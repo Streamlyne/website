@@ -5,8 +5,15 @@ author: Glavin Wiechert. Todd Murphy;
 
 
 body {
-    padding-top: 50px;
+	padding-top: 91px;
 }
+/*
+@media (min-width:768px) {
+	body {
+	    padding-top: 50px;
+	}
+}
+*/
 
 body *,
 .navbar-inverse .nav > li > a {
@@ -24,6 +31,7 @@ ul {
 
 .carousel-fade {
 	/*background-color: #1e110a;*/
+	/*
 	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 17, 10, 0.00)), to(rgba(30, 17, 9, 0.80)));
 	background-image: -webkit-linear-gradient(top, rgba(30, 17, 10, 0.00), rgba(30, 17, 9, 0.80));
 	background-image: -moz-linear-gradient(top, rgba(30, 17, 10, 0.00), rgba(30, 17, 9, 0.80));
@@ -31,6 +39,7 @@ ul {
 	background-image: -ms-linear-gradient(top, rgba(30, 17, 10, 0.00), rgba(30, 17, 9, 0.80));
 	background-image: linear-gradient(top, rgba(30, 17, 10, 0.00), rgba(30, 17, 9, 0.80));
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#1e110a', EndColorStr='#1e1109');
+	*/
 	height:100%;
 }
 .carousel-control,
@@ -166,4 +175,20 @@ h3 {
 blockquote.testimonial p {
 	font-size: 1.3em;
 }
+
+.carousel-inner .one {
+	background: url(../img/header1.jpg) no-repeat;
+	background-position: center bottom;
+}
+
+.carousel-inner .carousel-caption * {
+	background-color: rgba(0,0,0,0.75);
+	padding: 10px 10px;
+	margin-bottom: 10px;
+}
+.carousel-inner .carousel-caption p {
+	font-size: 1.6em;
+	color: #fff;
+}
+
 
