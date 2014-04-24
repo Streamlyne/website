@@ -181,6 +181,13 @@ blockquote.testimonial p {
 	background-position: center bottom;
 }
 
+
+.carousel-inner .two {
+	background: url(../img/EarlyAdopter_plantguy.jpg) no-repeat;
+	background-position: center bottom;
+}
+
+
 .carousel-inner .carousel-caption * {
 	background-color: rgba(0,0,0,0.75);
 	padding: 10px 10px;
