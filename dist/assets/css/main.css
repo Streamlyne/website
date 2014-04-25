@@ -79,6 +79,10 @@ p.lead {
 	color: #FFFFFF;
 }
 
+ul li {
+  color: #a5b2b9;
+}
+
 .feature img {
 	max-width:600px; width:100%; height:auto;
 }
