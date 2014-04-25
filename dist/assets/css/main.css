@@ -111,6 +111,12 @@ p.lead {
 	width: auto;
 }
 
+@media (max-width: 767px) {
+  .navbar-brand {
+    padding: 10px;
+  }
+}
+
 a:hover {
 	color: #FF851B;
 }
