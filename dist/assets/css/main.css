@@ -92,7 +92,10 @@ p.lead {
 
 .navbar-inverse .nav .active > a,
 .navbar-inverse .nav .active > a:hover,
-.navbar-inverse .nav .active > a:focus {
+.navbar-inverse .nav .active > a:focus,
+.nav .active > a,
+.nav .active > a:hover,
+.nav .active > a:focus {
 	color: #FF851B;
 }
 
@@ -102,7 +105,8 @@ p.lead {
 }
 
 .navbar .nav > li > a:hover {
-	color: #FFDC00;
+	/* color: #FFDC00; */
+  color: rgb(129,186,209);
 }
 
 .navbar .navbar-brand img {
@@ -123,8 +127,12 @@ a:hover {
 
 .nav>li>a:hover,
 .nav>li>a:focus {
+  /*
 	background-color: #FFDC00;
 	color: #626c72;
+  */
+  background-color: transparent;
+  color: rgb(129,186,209);
 }
 
 section {
