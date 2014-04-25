@@ -1,17 +1,19 @@
 
 <section id="footer">
   <div class="container">
-    
+
 
     <ul class="nav navbar-nav">
-	    {{#each pages}}
+    {{#withSort pages "data.order"}}
+      {{#unless data.hiddenInNavbar}}
 	    <li{{#if this.isCurrentPage}} class="active"{{/if}}>
 	      <a href="{{relative dest this.dest}}">{{ data.title }}</a>
 	    </li>
-	    {{/each}}
-	</ul>
+      {{/unless}}
+    {{/withSort}}
+  	</ul>
 	
-	<br/>
+  	<br/>
 
     <div class="row">
       <div class="span12 text-center">
