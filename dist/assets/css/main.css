@@ -7,17 +7,22 @@ author: Glavin Wiechert. Todd Murphy;
 body {
 	padding-top: 91px;
 }
-/*
-@media (min-width:768px) {
+
+@media (max-width: 767px) and (min-width: 481px) {
+	body {
+			padding-top: 51px;
+	}
+}
+
+@media (max-width: 480px) {
 	body {
 	    padding-top: 50px;
 	}
 }
-*/
 
 body *,
 .navbar-inverse .nav > li > a {
-   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
    font-weight: 300;
 }
 
@@ -85,8 +90,8 @@ p.lead {
 	border-color: transparent;
 }
 
-.navbar-inverse .nav .active > a, 
-.navbar-inverse .nav .active > a:hover, 
+.navbar-inverse .nav .active > a,
+.navbar-inverse .nav .active > a:hover,
 .navbar-inverse .nav .active > a:focus {
 	color: #FF851B;
 }
@@ -97,14 +102,20 @@ p.lead {
 }
 
 .navbar .nav > li > a:hover {
-	color: #FFDC00;	
+	color: #FFDC00;
 }
 
-a:hover { 
+.navbar .navbar-brand img {
+	height: 1em;
+	vertical-align: top;
+	width: auto;
+}
+
+a:hover {
 	color: #FF851B;
 }
 
-.nav>li>a:hover, 
+.nav>li>a:hover,
 .nav>li>a:focus {
 	background-color: #FFDC00;
 	color: #626c72;
@@ -118,7 +129,7 @@ section {
 	*/
 	box-shadow: inset rgba(100, 100, 100, 0.25) 0 1px 1px;
 	padding-bottom:40px;
-	
+
 	/*
 	margin-top: 60px;
 	*/
@@ -132,15 +143,15 @@ section h4 {
 	margin-top:30px;
 	color: #fff !important;
 }
-section p, section ul { 
-	color:#7a868d; 
+section p, section ul {
+	color:#7a868d;
 }
 section img {
 	padding-bottom: 30px;
 }
 section#plantcompare {
 	/* background: url(../img/secbg-1.jpg) 50% 0 repeat fixed; */
-	
+
 }
 section li {
 	color: #fff;
@@ -178,15 +189,23 @@ blockquote.testimonial p {
 
 .carousel-inner .one {
 	background: url(../img/header1.jpg) no-repeat;
-	background-position: center bottom;
 }
-
-
 .carousel-inner .two {
 	background: url(../img/EarlyAdopter_plantguy.jpg) no-repeat;
-	background-position: center bottom;
 }
 
+.carousel-inner .one,
+.carousel-inner .two {
+	background-position: center bottom;
+	background-size: 100% auto;
+}
+
+@media (max-width: 480px) {
+	.carousel-inner .one,
+	.carousel-inner .two {
+		background-size: auto 100%;
+	}
+}
 
 .carousel-inner .carousel-caption * {
 	background-color: rgba(0,0,0,0.75);
@@ -197,5 +216,3 @@ blockquote.testimonial p {
 	font-size: 1.6em;
 	color: #fff;
 }
-
-
