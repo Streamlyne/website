@@ -23,14 +23,13 @@ component: navbar
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-            {{#each pages}}
-              {{#if this.hidden}}
-              {{else}}
-                <li{{#if this.isCurrentPage}} class="active"{{/if}}>
+            {{#withSort pages "data.order"}}
+              {{#unless data.hiddenInNavbar}}
+                <li {{#if this.isCurrentPage}} class="active"{{/if}}>
                   <a href="{{relative dest this.dest}}">{{ data.title }}</a>
                 </li>
-              {{/if}}
-            {{/each}}
+              {{/unless}}
+            {{/withSort}}
         </ul>
 
     </div><!-- /.navbar-collapse -->
