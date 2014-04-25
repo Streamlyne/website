@@ -5,14 +5,14 @@
 
     <ul class="nav navbar-nav">
     {{#withSort pages "data.order"}}
-      {{#unless data.hiddenInNavbar}}
+      {{#unless data.hidden}}
 	    <li{{#if this.isCurrentPage}} class="active"{{/if}}>
 	      <a href="{{relative dest this.dest}}">{{ data.title }}</a>
 	    </li>
       {{/unless}}
     {{/withSort}}
   	</ul>
-	
+
   	<br/>
 
     <div class="row">

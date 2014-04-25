@@ -193,6 +193,13 @@ h3 {
 	font-weight:900;
 }
 
+.contact-page .carousel-caption .caption a {
+  color: white;
+}
+.contact-page .carousel-caption .caption a:hover {
+  color: #FF851B;
+}
+
 .industrial-internet i.fa {
 	font-size: 5em;
 }
@@ -221,12 +228,13 @@ blockquote.testimonial p {
 	}
 }
 
-.carousel-inner .carousel-caption * {
+.carousel-inner .carousel-caption > h1,
+.carousel-inner .carousel-caption > h2 {
 	background-color: rgba(0,0,0,0.75);
 	padding: 10px 10px;
 	margin-bottom: 10px;
 }
-.carousel-inner .carousel-caption p {
+.carousel-inner .carousel-caption > .caption {
 	font-size: 1.6em;
 	color: #fff;
   background-color: rgba(0,133,200,0.75);

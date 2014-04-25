@@ -24,7 +24,7 @@ component: navbar
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
             {{#withSort pages "data.order"}}
-              {{#unless data.hiddenInNavbar}}
+              {{#unless data.hidden}}
                 <li {{#if this.isCurrentPage}} class="active"{{/if}}>
                   <a href="{{relative dest this.dest}}">{{ data.title }}</a>
                 </li>
