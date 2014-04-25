@@ -211,6 +211,13 @@ h3 {
   margin-top: 0px;
 }
 
+.how-it-works-page ul {
+  padding: 0px;
+}
+.how-it-works-page ul li {
+    list-style-type:none;
+}
+
 .contact-page .carousel-caption .caption a {
   color: white;
 }
