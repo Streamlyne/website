@@ -221,4 +221,5 @@ blockquote.testimonial p {
 .carousel-inner .carousel-caption p {
 	font-size: 1.6em;
 	color: #fff;
+  background-color: rgba(0,133,200,0.75);
 }
