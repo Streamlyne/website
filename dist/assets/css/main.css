@@ -193,6 +193,20 @@ h3 {
 	font-weight:900;
 }
 
+.company-page .social-links a {
+  margin: 5px;
+}
+
+.company-page .profile h3 {
+  font-size: 20px;
+  margin-bottom: 0px;
+  font-weight: 300;
+}
+
+.company-page .profile h4 {
+  margin-top: 0px;
+}
+
 .contact-page .carousel-caption .caption a {
   color: white;
 }
