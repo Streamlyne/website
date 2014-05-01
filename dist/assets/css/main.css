@@ -3,6 +3,15 @@ Streamlyne Custom Overrides for Lava Template and Twitter Bootstrap
 author: Glavin Wiechert. Todd Murphy;
 */
 
+/* Entire body's background color the same as navigation bars' */
+html, body {
+   background-color: #26292B;
+}
+
+/* Main content background forced white (original background color) */
+div[role="main"] {
+   background-color: white;
+}
 
 body {
 	padding-top: 91px;
@@ -75,12 +84,12 @@ a.btn-main:hover {
 	font-style:normal;
 }
 
-p.lead {
-	color: #FFFFFF;
+p, ul li {
+  color: rgb(75, 100, 131);
 }
 
-ul li {
-  color: #a5b2b9;
+p.lead {
+	color: #FFFFFF;
 }
 
 .feature img {
@@ -211,10 +220,10 @@ h3 {
   margin-top: 0px;
 }
 
-.how-it-works-page ul {
+ul.bulletless {
   padding: 0px;
 }
-.how-it-works-page ul li {
+ul.bulletless li {
     list-style-type:none;
 }
 
@@ -263,4 +272,5 @@ blockquote.testimonial p {
 	font-size: 1.6em;
 	color: #fff;
   background-color: rgba(0,133,200,0.75);
+  padding: 10px 10px;
 }
