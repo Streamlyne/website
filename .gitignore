@@ -24,3 +24,4 @@ site/
 bower
 
 dist/sitemap.xml
+dist/*.html
