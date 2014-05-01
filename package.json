@@ -1,6 +1,6 @@
 {
   "name": "streamlyne-website",
- "description": "Streamlyne's website..",
+  "description": "Streamlyne's website..",
   "version": "0.1.0",
   "homepage": "https://github.com/Glavin001/streamlyne-website",
   "author": {
@@ -31,7 +31,8 @@
     "assemble-contrib-anchors": "*",
     "assemble-contrib-permalinks": "*",
     "assemble-contrib-sitemap": "*",
-    "assemble-contrib-toc": "*"
+    "assemble-contrib-toc": "*",
+    "grunt-s3": "~0.2.0-alpha.3"
   },
   "licenses": [
     {
