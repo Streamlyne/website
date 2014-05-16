@@ -188,6 +188,12 @@ section.section-blue {
 	border-color: #3491b3;
 }
 
+
+section.section-orange {
+	background: rgba(213,63,40,1.0);
+	border-color: #3491b3;
+}
+
 h3 {
 	margin-bottom: 30px;
 	font-weight:700;
