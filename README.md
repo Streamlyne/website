@@ -19,3 +19,22 @@ bower install
 ```bash
 grunt serve
 ```
+
+## Deploying to S3
+
+Edit your `deploy.yaml` file in your project's root directory.
+
+```yaml
+---
+  link: "http://streamlyne.co/"
+  s3:
+    key: "AWS_KEY"
+    secret: "AWS_SECRET"
+    bucket: "AWS_BUCKET_NAME"
+```
+
+Then run:
+
+```bash
+grunt deploy
+```

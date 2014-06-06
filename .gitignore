@@ -22,6 +22,8 @@ products_WB049M4SF
 www/
 site/
 bower
+dist.zip
+deploy.yaml
 
 dist/sitemap.xml
 dist/*.html

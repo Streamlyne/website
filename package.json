@@ -32,7 +32,7 @@
     "assemble-contrib-permalinks": "*",
     "assemble-contrib-sitemap": "*",
     "assemble-contrib-toc": "*",
-    "grunt-s3": "~0.2.0-alpha.3"
+    "grunt-s3": "^0.2.0-alpha.3"
   },
   "licenses": [
     {

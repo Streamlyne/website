@@ -7,17 +7,29 @@
  * Licensed under the MIT license.
  */
 
-'use strict';
+/* jshint strict: false */
+/* global module, require */
+var path = require('path');
 
 // # Globbing
 // for performance reasons we're only matching one level down:
 // '<%= config.src %>/templates/pages/{,*/}*.hbs'
 // use this if you want to match all subfolders:
 // '<%= config.src %>/templates/pages/**/*.hbs'
-
 module.exports = function(grunt) {
 
   require('time-grunt')(grunt);
+
+  // Amazon Configuration
+  var deployConfig = {};
+  // Development
+  var deployConfigPath = path.resolve(__dirname, 'deploy.yaml');
+  try {
+      deployConfig = grunt.file.readYAML(deployConfigPath);
+      //grunt.log.write('deployConfig', JSON.stringify(deployConfig));
+  } catch (e) {
+      grunt.log.error('No deploy configuration file found at "'+deployConfigPath+'".');
+  }
 
   // Project configuration.
   grunt.initConfig({
@@ -26,6 +38,8 @@ module.exports = function(grunt) {
       src: 'src',
       dist: 'dist'
     },
+
+    deploy: deployConfig,
 
     watch: {
       assemble: {
@@ -80,7 +94,33 @@ module.exports = function(grunt) {
 
     // Before generating any new files,
     // remove any previously-created files.
-    clean: ['<%= config.dist %>/**/*.{html,xml}']
+    clean: ['<%= config.dist %>/**/*.{html,xml}'],
+
+    s3: {
+        options: {
+            access: 'public-read',
+            headers: {
+                // Two Year cache policy (1000 * 60 * 60 * 24 * 730)
+                'Cache-Control': 'max-age=630720000, public',
+                'Expires': new Date(Date.now() + 63072000000).toUTCString()
+            }
+        },
+        www: {
+            options: {
+                key: '<%= deploy.s3.key %>',
+                secret: '<%= deploy.s3.secret %>',
+                bucket: '<%= deploy.s3.bucket %>'
+            },
+            upload: [
+                {
+                    src: 'dist/**/*',
+                    rel: path.basename(path.resolve(__dirname, 'dist')),
+                    dest: '',
+                    options: { gzip: true }
+                }
+            ]
+        }
+    }
 
   });
 
@@ -103,6 +143,11 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', [
     'build'
+  ]);
+
+  grunt.registerTask('deploy', [
+    'build',
+    's3'
   ]);
 
 };
