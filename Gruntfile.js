@@ -113,7 +113,43 @@ module.exports = function(grunt) {
             },
             upload: [
                 {
-                    src: 'dist/**/*',
+                    src: 'dist/*.html',
+                    rel: path.basename(path.resolve(__dirname, 'dist')),
+                    dest: '',
+                    options: { gzip: true }
+                },
+                {
+                    src: 'dist/assets/css/*.css',
+                    rel: path.basename(path.resolve(__dirname, 'dist')),
+                    dest: '',
+                    options: { gzip: true }
+                },
+                {
+                    src: 'dist/assets/js/*.js',
+                    rel: path.basename(path.resolve(__dirname, 'dist')),
+                    dest: '',
+                    options: { gzip: true }
+                },
+                {
+                    src: 'dist/assets/font/*',
+                    rel: path.basename(path.resolve(__dirname, 'dist')),
+                    dest: '',
+                    options: { gzip: true }
+                },
+                {
+                    src: 'dist/assets/*.png',
+                    rel: path.basename(path.resolve(__dirname, 'dist')),
+                    dest: '',
+                    options: { gzip: true }
+                },
+                {
+                    src: 'dist/assets/*.ico',
+                    rel: path.basename(path.resolve(__dirname, 'dist')),
+                    dest: '',
+                    options: { gzip: true }
+                },
+                {
+                    src: 'dist/assets/img/*',
                     rel: path.basename(path.resolve(__dirname, 'dist')),
                     dest: '',
                     options: { gzip: true }
@@ -128,6 +164,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-s3');
 
   grunt.registerTask('serve', [
     'clean',
