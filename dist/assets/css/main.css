@@ -35,7 +35,9 @@ body *,
    font-weight: 300;
 }
 
-img { width:100%; height:auto; }
+img {
+  width:100%; height:auto;
+}
 
 ul {
 	font-size: 16px;
@@ -86,6 +88,11 @@ a.btn-main:hover {
 
 p, ul li {
   color: rgb(75, 100, 131);
+
+  font-family: 'Gotham SSm A', 'Gotham SSm B', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
 }
 
 p.lead {
@@ -161,37 +168,67 @@ section {
 	margin-top: 60px;
 	*/
 }
-section p {color: #fff !important;}
+/*section p {
+  color: #fff !important;
+}*/
 section h3 {
-	margin-top:40px;
-	color: #fff !important;
+  margin-top:40px;
+  /*color: #fff !important;*/
 }
 section h4 {
-	margin-top:30px;
-	color: #fff !important;
+  margin-top:30px;
+  /*color: #fff !important;*/
 }
-section p, section ul {
+
+/*section p, section ul {
 	color:#7a868d;
-}
+}*/
 section img {
 	padding-bottom: 30px;
 }
 section#plantcompare {
 	/* background: url(../img/secbg-1.jpg) 50% 0 repeat fixed; */
-
 }
 section li {
 	color: #fff;
 }
+
+section.section-blue p,
+section.section-orange p,
+section.section-black p,
+section.section-blue ul,
+section.section-orange ul,
+section.section-black ul,
+ {
+  color: #fff !important;
+}
+
 section.section-blue {
 	background: #4eaacc;
 	border-color: #3491b3;
 }
 
-
 section.section-orange {
 	background: rgba(213,63,40,1.0);
 	border-color: #3491b3;
+}
+
+section.section-black {
+  background: rgba(38,41,43,1.0);
+  border-color: rgba(0,0,0,0);
+}
+
+section.section-grey {
+  background: rgba(237,237,237,1.0);
+  border-color: rgba(0,0,0,0);
+}
+section.section-grey p {
+  color: rgb(75, 100, 131);
+}
+
+hr {
+  color: rgba(237,237,237,1.0);
+  border-color: rgba(237,237,237,1.0);
 }
 
 h3 {
@@ -200,7 +237,7 @@ h3 {
 }
 
 /* Page Specific */
-.analytics-page .right-column {
+.product-page .right-column {
 	overflow: hidden;
 	-webkit-font-smoothing: antialiased;
 	/*
@@ -248,22 +285,34 @@ blockquote.testimonial p {
 	font-size: 1.3em;
 }
 
-.carousel-inner .one {
-	background: url(../img/header1.jpg) no-repeat;
-}
-.carousel-inner .two {
-	background: url(../img/EarlyAdopter_plantguy.jpg) no-repeat;
-}
-
-.carousel-inner .one,
-.carousel-inner .two {
-	background-position: center bottom;
+.carousel-inner div.item {
+  background-position: center bottom;
 	background-size: 100% auto;
 }
 
+.carousel-inner div.item.home-item {
+  /*background: url(../img/header1.jpg) no-repeat;*/
+	background: url(../img/Pipeline.jpg) no-repeat;
+  background-position: center center;
+}
+.carousel-inner .product-item {
+  /*background: url(../img/EarlyAdopter_plantguy.jpg) no-repeat;*/
+  background-position: center center !important;
+  background: url(../img/Flaring.jpg) no-repeat;
+}
+.product-page div.item h1 {
+  background-color: transparent;
+  text-align: left;
+}
+.carousel-inner div.item.how-it-works-item {
+  background-position: center top !important;
+  background-size: auto auto !important;
+  background: url(../img/Valve.jpg) no-repeat;
+  /*background: url(http://cdn2.crushable.com/wp-content/uploads/2008/11/krtkidselements011004-kn-saywhat-2-howie-mandel-howie-do-it.jpg) no-repeat;*/
+}
+
 @media (max-width: 480px) {
-	.carousel-inner .one,
-	.carousel-inner .two {
+	.carousel-inner .item {
 		background-size: auto 100%;
 	}
 }
@@ -273,10 +322,21 @@ blockquote.testimonial p {
 	background-color: rgba(0,0,0,0.75);
 	padding: 10px 10px;
 	margin-bottom: 10px;
+  font-weight: lighter;
 }
 .carousel-inner .carousel-caption > .caption {
 	font-size: 1.6em;
 	color: #fff;
   background-color: rgba(0,133,200,0.75);
   padding: 10px 10px;
+}
+
+.carousel .item.small-item {
+  height: 450px;
+}
+
+.sl-big-icon {
+  font-size: 18em;
+  width:100%;
+  text-align:center;
 }
