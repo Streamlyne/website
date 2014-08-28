@@ -27,12 +27,11 @@
         "bio": "src/content/glavin.md"
     },
     {
-        "name": "Neil Cody",
+        "name": "Jackie Howatt",
         "title": "VP of Sales",
-        "avatar": "img/neil.jpg",
-        "twitter": "",
-        "linkedin": "http://ca.linkedin.com/pub/neil-cody/58/355/7b0",
-        "email": "neil@streamlne.co",
-        "bio": "src/content/neil.md"
+        "avatar": "img/jackie_2.jpg",
+        "twitter": "jackiehowatt",
+        "linkedin": "http://ca.linkedin.com/in/jackiehowatt",
+        "email": "jackie@streamlyne.co"
     }
 ]
