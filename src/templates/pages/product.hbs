@@ -28,110 +28,516 @@ hidden: false
 
     <br/>
 
-    <br/>
-    <br/>
+    <div role="tabpanel">
 
-    <div class="row">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs nav-justified" role="tablist">
+        <li role="presentation" class="active"><a href="#sensors" aria-controls="sensors" role="tab" data-toggle="tab">Sensors</a></li>
+        <li role="presentation"><a href="#scenarios" aria-controls="scenarios" role="tab" data-toggle="tab">Scenarios</a></li>
+        <li role="presentation"><a href="#alarms" aria-controls="alarms" role="tab" data-toggle="tab">Alarms</a></li>
+        <li role="presentation"><a href="#optimizer" aria-controls="optimizer" role="tab" data-toggle="tab">Optimizer</a></li>
+      </ul>
 
-      <div class="col-md-6">
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="sensors">
 
+            <br/>
+            <br/>
 
-        <h3>Scenario Builder</h3>
-        <p>Create multi-sensor alarms for any scenario in your plant. The Scenario Builder allows operators to create multi-sensor alarms with DCS and non-DCS data that Streamlyne will automatically evaluate, and then alert the likelihood of that specific scenario occurring (ie. flaring, hydrates). A scenario can include just one sensor or a string of sensors that lead up to an event/ scenario. Now you can track in real time the progression of any event and take action faster.
-        </p>
-        <br/>
+            <div class="row">
+                <div class="col-md-6">
+                  <h3>Mobile Metrics</h3>
+                  <p>Mobile Metrics automates existing paper data collection processes to easily graph trends in real-time. Log sheets can take days or even months to compile and trend. With Mobile Metrics, you can now create log sheets that can be shared with employees. Create log sheets with Streamlyne's web application, and it automtically pushes it to Streamlyne's mobile web application to use in the field collecting data. This allows you to digitally capture non-DCS data which can be used to build Sceanrios, or tojust simply track in real-time.
+                  </p>
+                </div>
 
-      </div>
-
-      <div class="right-column col-md-6">
-        <img src="{{assets}}/img/Scenarios_Create Scenario.png"/>
-      </div>
-
-    </div>
-
-    <br/>
-    <br/>
-    <br/>
-
-    <div class="container">
-
-      <div class="col-md-6">
-        <img src="{{assets}}/img/Scenarios_Flaring.png" />
-      </div>
-
-      <div class="col-md-6">
-        <h3>Flaring</h3>
-        <p>Unplanned flaring is a drain on both profitability and product, can be hazardous to the surrounding environment, and create red flags to government. With Streamlyne you can identify the pathway of “triggers” (sensors) that are involved in any flaring event to help you identify when a flare might take place. This allows you and your plant to be proactive instead of reactive, reducing costs and unknown outcomes.
-        </p>
-      </div>
-
-    </div>
-
-    <br/>
-    <br/>
-    <br/>
-
-    <div class="container">
-
-      <div class="col-md-6">
-        <h3>Hydrates</h3>
-        <p>Hydrates can be insidious to any plant, and can be difficult to track. Hydrates are common but some are extremely lethal if left to form. Streamlyne allows you to input any string of “triggers” (sensors) for any hydrate scenario to help you identify when a hydrate is forming. You can now easily track the progress of a hydrate event by inputting sensor high and low thresholds to assist in your diagnosis.
-        </p>
-      </div>
-
-      <div class="col-md-6">
-        <img src="{{assets}}/img/Scenarios_Hydrates.png" />
-      </div>
-
-    </div>
-
-    <br/>
-    <br/>
-
-  </div>
-
-  <section class="section-grey">
-
-    <div class="container">
+                <div class="col-md-6">
+                  <img src="{{assets}}/img/Metrics_Create Metrics.png" />
+                </div>
+            </div>
 
 
-      <br/>
-      <br/>
+            <br/>
+            <br/>
+            <br/>
 
-      <div class="row">
+            <div class="row">
 
-        <div class="col-md-6">
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Flaring.png" />
+              </div>
 
-          <img src="{{assets}}/img/Alarms_Queue.png" />
+              <div class="col-md-6">
+                <h3>Flaring</h3>
+                <p>Unplanned flaring is a drain on both profitability and product, can be hazardous to the surrounding environment, and create red flags to government. With Streamlyne you can identify the pathway of “triggers” (sensors) that are involved in any flaring event to help you identify when a flare might take place. This allows you and your plant to be proactive instead of reactive, reducing costs and unknown outcomes.
+                </p>
+              </div>
+
+            </div>
+
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <h3>Hydrates</h3>
+                <p>Hydrates can be insidious to any plant, and can be difficult to track. Hydrates are common but some are extremely lethal if left to form. Streamlyne allows you to input any string of “triggers” (sensors) for any hydrate scenario to help you identify when a hydrate is forming. You can now easily track the progress of a hydrate event by inputting sensor high and low thresholds to assist in your diagnosis.
+                </p>
+              </div>
+
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Hydrates.png" />
+              </div>
+
+            </div>
+
+            
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Flaring.png" />
+              </div>
+
+              <div class="col-md-6">
+                <h3>Flaring</h3>
+                <p>Unplanned flaring is a drain on both profitability and product, can be hazardous to the surrounding environment, and create red flags to government. With Streamlyne you can identify the pathway of “triggers” (sensors) that are involved in any flaring event to help you identify when a flare might take place. This allows you and your plant to be proactive instead of reactive, reducing costs and unknown outcomes.
+                </p>
+              </div>
+
+            </div>
+
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <h3>Hydrates</h3>
+                <p>Hydrates can be insidious to any plant, and can be difficult to track. Hydrates are common but some are extremely lethal if left to form. Streamlyne allows you to input any string of “triggers” (sensors) for any hydrate scenario to help you identify when a hydrate is forming. You can now easily track the progress of a hydrate event by inputting sensor high and low thresholds to assist in your diagnosis.
+                </p>
+              </div>
+
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Hydrates.png" />
+              </div>
+
+            </div>
+
+        </div>
+        <div role="tabpanel" class="tab-pane" id="scenarios">
+
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+
+                <h3>Scenario Builder</h3>
+                <p>Create multi-sensor alarms for any scenario in your plant. The Scenario Builder allows operators to create multi-sensor alarms with DCS and non-DCS data that Streamlyne will automatically evaluate, and then alert the likelihood of that specific scenario occurring (ie. flaring, hydrates). A scenario can include just one sensor or a string of sensors that lead up to an event/ scenario. Now you can track in real time the progression of any event and take action faster.
+                </p>
+                <br/>
+
+              </div>
+
+              <div class="right-column col-md-6">
+                <img src="{{assets}}/img/Scenarios_Create Scenario.png"/>
+              </div>
+
+            </div>
+
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Flaring.png" />
+              </div>
+
+              <div class="col-md-6">
+                <h3>Flaring</h3>
+                <p>Unplanned flaring is a drain on both profitability and product, can be hazardous to the surrounding environment, and create red flags to government. With Streamlyne you can identify the pathway of “triggers” (sensors) that are involved in any flaring event to help you identify when a flare might take place. This allows you and your plant to be proactive instead of reactive, reducing costs and unknown outcomes.
+                </p>
+              </div>
+
+            </div>
+
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <h3>Hydrates</h3>
+                <p>Hydrates can be insidious to any plant, and can be difficult to track. Hydrates are common but some are extremely lethal if left to form. Streamlyne allows you to input any string of “triggers” (sensors) for any hydrate scenario to help you identify when a hydrate is forming. You can now easily track the progress of a hydrate event by inputting sensor high and low thresholds to assist in your diagnosis.
+                </p>
+              </div>
+
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Hydrates.png" />
+              </div>
+
+            </div>
+
+
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Flaring.png" />
+              </div>
+
+              <div class="col-md-6">
+                <h3>Flaring</h3>
+                <p>Unplanned flaring is a drain on both profitability and product, can be hazardous to the surrounding environment, and create red flags to government. With Streamlyne you can identify the pathway of “triggers” (sensors) that are involved in any flaring event to help you identify when a flare might take place. This allows you and your plant to be proactive instead of reactive, reducing costs and unknown outcomes.
+                </p>
+              </div>
+
+            </div>
+
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <h3>Hydrates</h3>
+                <p>Hydrates can be insidious to any plant, and can be difficult to track. Hydrates are common but some are extremely lethal if left to form. Streamlyne allows you to input any string of “triggers” (sensors) for any hydrate scenario to help you identify when a hydrate is forming. You can now easily track the progress of a hydrate event by inputting sensor high and low thresholds to assist in your diagnosis.
+                </p>
+              </div>
+
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Hydrates.png" />
+              </div>
+
+            </div>
+
+
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Flaring.png" />
+              </div>
+
+              <div class="col-md-6">
+                <h3>Flaring</h3>
+                <p>Unplanned flaring is a drain on both profitability and product, can be hazardous to the surrounding environment, and create red flags to government. With Streamlyne you can identify the pathway of “triggers” (sensors) that are involved in any flaring event to help you identify when a flare might take place. This allows you and your plant to be proactive instead of reactive, reducing costs and unknown outcomes.
+                </p>
+              </div>
+
+            </div>
+
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <h3>Hydrates</h3>
+                <p>Hydrates can be insidious to any plant, and can be difficult to track. Hydrates are common but some are extremely lethal if left to form. Streamlyne allows you to input any string of “triggers” (sensors) for any hydrate scenario to help you identify when a hydrate is forming. You can now easily track the progress of a hydrate event by inputting sensor high and low thresholds to assist in your diagnosis.
+                </p>
+              </div>
+
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Hydrates.png" />
+              </div>
+
+            </div>
+
+        </div>
+        <div role="tabpanel" class="tab-pane" id="alarms">
+
+          <br/>
           <br/>
 
+          <div class="row">
+
+            <div class="col-md-6">
+
+              <img src="{{assets}}/img/Alarms_Queue.png" />
+              <br/>
+
+            </div>
+
+            <div class="right-column col-md-6">
+              <h3>Alarm Manager</h3>
+              <p>View your DCS Alarms and your Streamlyne multi-sensor alarms in one place. Streamlyne’s Alarm Manager allows you to cover your bases by observing your current DCS alarms in real time, and your customized Streamlyne Scenario alarms. As alarms come in, you can input a "cause" and "solution" for each alarm, or select from the existing list.
+              </p>
+            </div>
+          </div>
+
+
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <h3>Hydrates</h3>
+                <p>Hydrates can be insidious to any plant, and can be difficult to track. Hydrates are common but some are extremely lethal if left to form. Streamlyne allows you to input any string of “triggers” (sensors) for any hydrate scenario to help you identify when a hydrate is forming. You can now easily track the progress of a hydrate event by inputting sensor high and low thresholds to assist in your diagnosis.
+                </p>
+              </div>
+
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Hydrates.png" />
+              </div>
+
+            </div>
+
+
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Flaring.png" />
+              </div>
+
+              <div class="col-md-6">
+                <h3>Flaring</h3>
+                <p>Unplanned flaring is a drain on both profitability and product, can be hazardous to the surrounding environment, and create red flags to government. With Streamlyne you can identify the pathway of “triggers” (sensors) that are involved in any flaring event to help you identify when a flare might take place. This allows you and your plant to be proactive instead of reactive, reducing costs and unknown outcomes.
+                </p>
+              </div>
+
+            </div>
+
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <h3>Hydrates</h3>
+                <p>Hydrates can be insidious to any plant, and can be difficult to track. Hydrates are common but some are extremely lethal if left to form. Streamlyne allows you to input any string of “triggers” (sensors) for any hydrate scenario to help you identify when a hydrate is forming. You can now easily track the progress of a hydrate event by inputting sensor high and low thresholds to assist in your diagnosis.
+                </p>
+              </div>
+
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Hydrates.png" />
+              </div>
+
+            </div>
+
+
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Flaring.png" />
+              </div>
+
+              <div class="col-md-6">
+                <h3>Flaring</h3>
+                <p>Unplanned flaring is a drain on both profitability and product, can be hazardous to the surrounding environment, and create red flags to government. With Streamlyne you can identify the pathway of “triggers” (sensors) that are involved in any flaring event to help you identify when a flare might take place. This allows you and your plant to be proactive instead of reactive, reducing costs and unknown outcomes.
+                </p>
+              </div>
+
+            </div>
+
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <h3>Hydrates</h3>
+                <p>Hydrates can be insidious to any plant, and can be difficult to track. Hydrates are common but some are extremely lethal if left to form. Streamlyne allows you to input any string of “triggers” (sensors) for any hydrate scenario to help you identify when a hydrate is forming. You can now easily track the progress of a hydrate event by inputting sensor high and low thresholds to assist in your diagnosis.
+                </p>
+              </div>
+
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Hydrates.png" />
+              </div>
+
+            </div>
+
+        </div>
+        <div role="tabpanel" class="tab-pane" id="optimizer">
+            
+
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Flaring.png" />
+              </div>
+
+              <div class="col-md-6">
+                <h3>Flaring</h3>
+                <p>Unplanned flaring is a drain on both profitability and product, can be hazardous to the surrounding environment, and create red flags to government. With Streamlyne you can identify the pathway of “triggers” (sensors) that are involved in any flaring event to help you identify when a flare might take place. This allows you and your plant to be proactive instead of reactive, reducing costs and unknown outcomes.
+                </p>
+              </div>
+
+            </div>
+
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <h3>Hydrates</h3>
+                <p>Hydrates can be insidious to any plant, and can be difficult to track. Hydrates are common but some are extremely lethal if left to form. Streamlyne allows you to input any string of “triggers” (sensors) for any hydrate scenario to help you identify when a hydrate is forming. You can now easily track the progress of a hydrate event by inputting sensor high and low thresholds to assist in your diagnosis.
+                </p>
+              </div>
+
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Hydrates.png" />
+              </div>
+
+            </div>
+
+
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Flaring.png" />
+              </div>
+
+              <div class="col-md-6">
+                <h3>Flaring</h3>
+                <p>Unplanned flaring is a drain on both profitability and product, can be hazardous to the surrounding environment, and create red flags to government. With Streamlyne you can identify the pathway of “triggers” (sensors) that are involved in any flaring event to help you identify when a flare might take place. This allows you and your plant to be proactive instead of reactive, reducing costs and unknown outcomes.
+                </p>
+              </div>
+
+            </div>
+
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <h3>Hydrates</h3>
+                <p>Hydrates can be insidious to any plant, and can be difficult to track. Hydrates are common but some are extremely lethal if left to form. Streamlyne allows you to input any string of “triggers” (sensors) for any hydrate scenario to help you identify when a hydrate is forming. You can now easily track the progress of a hydrate event by inputting sensor high and low thresholds to assist in your diagnosis.
+                </p>
+              </div>
+
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Hydrates.png" />
+              </div>
+
+            </div>
+
+
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Flaring.png" />
+              </div>
+
+              <div class="col-md-6">
+                <h3>Flaring</h3>
+                <p>Unplanned flaring is a drain on both profitability and product, can be hazardous to the surrounding environment, and create red flags to government. With Streamlyne you can identify the pathway of “triggers” (sensors) that are involved in any flaring event to help you identify when a flare might take place. This allows you and your plant to be proactive instead of reactive, reducing costs and unknown outcomes.
+                </p>
+              </div>
+
+            </div>
+
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <h3>Hydrates</h3>
+                <p>Hydrates can be insidious to any plant, and can be difficult to track. Hydrates are common but some are extremely lethal if left to form. Streamlyne allows you to input any string of “triggers” (sensors) for any hydrate scenario to help you identify when a hydrate is forming. You can now easily track the progress of a hydrate event by inputting sensor high and low thresholds to assist in your diagnosis.
+                </p>
+              </div>
+
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Hydrates.png" />
+              </div>
+
+            </div>
+
+
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Flaring.png" />
+              </div>
+
+              <div class="col-md-6">
+                <h3>Flaring</h3>
+                <p>Unplanned flaring is a drain on both profitability and product, can be hazardous to the surrounding environment, and create red flags to government. With Streamlyne you can identify the pathway of “triggers” (sensors) that are involved in any flaring event to help you identify when a flare might take place. This allows you and your plant to be proactive instead of reactive, reducing costs and unknown outcomes.
+                </p>
+              </div>
+
+            </div>
+
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <h3>Hydrates</h3>
+                <p>Hydrates can be insidious to any plant, and can be difficult to track. Hydrates are common but some are extremely lethal if left to form. Streamlyne allows you to input any string of “triggers” (sensors) for any hydrate scenario to help you identify when a hydrate is forming. You can now easily track the progress of a hydrate event by inputting sensor high and low thresholds to assist in your diagnosis.
+                </p>
+              </div>
+
+              <div class="col-md-6">
+                <img src="{{assets}}/img/Scenarios_Hydrates.png" />
+              </div>
+
+            </div>
+
         </div>
 
-        <div class="right-column col-md-6">
-          <h3>Alarm Manager</h3>
-          <p>View your DCS Alarms and your Streamlyne multi-sensor alarms in one place. Streamlyne’s Alarm Manager allows you to cover your bases by observing your current DCS alarms in real time, and your customized Streamlyne Scenario alarms. As alarms come in, you can input a "cause" and "solution" for each alarm, or select from the existing list.
-          </p>
-        </div>
       </div>
 
     </div>
 
-  </section>
-
-  <div class="container">
-
     <br/>
     <br/>
-
-    <div class="col-md-6">
-      <h3>Mobile Metrics</h3>
-      <p>Mobile Metrics automates existing paper data collection processes to easily graph trends in real-time. Log sheets can take days or even months to compile and trend. With Mobile Metrics, you can now create log sheets that can be shared with employees. Create log sheets with Streamlyne's web application, and it automtically pushes it to Streamlyne's mobile web application to use in the field collecting data. This allows you to digitally capture non-DCS data which can be used to build Sceanrios, or tojust simply track in real-time.
-      </p>
-    </div>
-
-    <div class="col-md-6">
-      <img src="{{assets}}/img/Metrics_Create Metrics.png" />
-    </div>
 
   </div>
 
