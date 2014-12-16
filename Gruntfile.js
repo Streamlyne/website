@@ -158,6 +158,18 @@ module.exports = function(grunt) {
                     rel: path.basename(path.resolve(__dirname, 'dist')),
                     dest: '',
                     options: { gzip: true }
+                },
+                {
+                    src: 'dist/assets/bower/font-awesome/css/*.min.css',
+                    rel: path.basename(path.resolve(__dirname, 'dist')),
+                    dest: '',
+                    options: { gzip: true }
+                },
+                {
+                    src: 'dist/assets/bower/font-awesome/fonts/*',
+                    rel: path.basename(path.resolve(__dirname, 'dist')),
+                    dest: '',
+                    options: { gzip: true }
                 }
             ]
         }
