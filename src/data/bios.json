@@ -9,15 +9,6 @@
         "bio": "src/content/todd.md"
     },
     {
-        "name": "Dawson Reid",
-        "title": "CTO",
-        "avatar": "img/dawson.jpg",
-        "twitter": "DawsonReid",
-        "linkedin": "http://ca.linkedin.com/in/dawsonreid",
-        "email": "dawson@streamlyne.co",
-        "bio": "src/content/dawson.md"
-    },
-    {
         "name": "Glavin Wiechert",
         "title": "VP of Engineering",
         "avatar": "img/glavin.jpg",
