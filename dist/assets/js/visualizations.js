@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+var maxHeight = 300;
   var margin = {
       top: 20,
       right: 120,
@@ -7,7 +8,7 @@ $(document).ready(function() {
       left: 120
     },
     width = 960 - margin.right - margin.left,
-    height = 800 - margin.top - margin.bottom;
+    height = maxHeight - margin.top - margin.bottom;
 
   var i = 0,
     duration = 750,
@@ -44,7 +45,7 @@ $(document).ready(function() {
     update(root);
   });
 
-  d3.select(self.frameElement).style("height", "800px");
+  d3.select(self.frameElement).style("height", maxHeight+'px');
 
   function update(source) {
 

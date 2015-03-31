@@ -6,50 +6,226 @@ order: 1
 ---
 
 <!-- Intro Section -->
-    <section id="intro" class="intro-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Scrolling Nav</h1>
-                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
-                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
-                </div>
-            </div>
+<section id="intro" class="intro-section">
+  {{!--
+  <img src="{{assets}}/img/Offshore_platform_Cropped.jpg"></img> --}}
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="top-header">
+          <h2> Prevent Unplanned Downtime</h2>
+          <p class="text-center">Predictive analytics for your offshore and onshore processing facilities</p>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>About Section</h1>
-                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Services Section</h1>
-                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- About Section -->
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>Understand When Things Go Wrong</h1>
+        <p>
+          In one glance, visualize a real-time ripple effect of any major or minor event in your plant. Streamlyne’s interactive graph’s allow you to drill-down and easily view what alarms and sensors are involved with an unplanned downtime event
+        </p>
+        <svg class="tree-chart"></svg>
+        <h2>Flare/Product Off Spec Event - Prediction (1st Key Node)</h2>
+        <p>
+          It’s simple for a control room operator to trace and monitor an event. As you can see in the flare example, there are four (4) levels of sensors involved in this ripple effect. The first major node identifies the event (flare), and the operator can drill
+          down to the 2nd (Main Categories) level, 3rd (Total Spending level) , and 4th (Transportation) level of sensor data and alarm information to diagnose the impending event. Now, the operator can easily make the adjustments in their DCS to the
+          correct settings.
+        </p>
+        <h2>Key Stats (Gross Public Deficit)</h2>
+        <p>
+          Easily visualize key stats and probability that a minor or major event will potentially occur, with key information such as Set Point and Deviation. In this example, the data and visualization shows that there is a prediction of 65% that a flare event
+          will likely occur.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Contact Section</h1>
-                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
-                </div>
-            </div>
+
+<!-- Contact Section -->
+<section id="contact" class="section contact-section cloud_white_bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>Predictive Analytics</h1>
+
+        <br/>
+        <br/>
+
+        <div class="row">
+          <div class="col-md-4">
+            <img src="{{assets}}/img/circleicons/pie-chart.png"/>
+          </div>
+          <div class="col-md-8">
+            <h3>Predictive Analytics</h3>
+            <p>
+              Our predictive analytics automatically detect potential alerts and failures minutes, days, weeks, and months before they happen. Streamlyne helps identify root problems and predict the likely chain of events leading up to a potential failure. Streamlyne’s algorithms help detect sensor trends that cause a ripple effect by detecting anomalies that could affect safety or operations.
+            </p>
+          </div>
         </div>
-    </section>
+
+        <div class="row">
+          <div class="col-md-4">
+            <img src="{{assets}}/img/circleicons/calculator.png"/>
+          </div>
+          <div class="col-md-8">
+            <h3>Machine Learning</h3>
+            <p>
+              As our platform consumes more data, it becomes extremely valuable to control room operators and managers. Every operator interaction, data point, alert, sensor value, and event helps train our custom algorithms and analytics engine to be more intelligent and automatically learn how your plant operates and thinks.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <img src="{{assets}}/img/circleicons/image.png"/>
+          </div>
+          <div class="col-md-8">
+            <h3>Visualizations</h3>
+            <p>
+              Control room operators watch multiple screens and are constantly overloaded with information. Our real-time visualizations and graphs help operators make better and faster decisions by presenting complex data in simple visualizations.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="section contact-section slate_blue_bg colored">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>How It Works</h1>
+        <p>Streamlyne easily layers on top of your DCS and has no impact to your current IT systems. It’s a simple setup process and within a day we can have your control room operators up and running.
+        </p>
+        <br/>
+
+        <div class="row">
+          <div class="col-md-8">
+            <h3>DCS API Integration</h3>
+            <p>
+              We integrate Streamlyne with your existing DCS to stream your sensor data in real-time. Streamlyne easily integrates with all major DCS providers, such as: ABB, Invensys, Honeywell, and Siemens.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="{{assets}}/img/circleicons/gear.png"/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-8">
+            <h3>Stream Data In Real-Time</h3>
+            <p>
+              Once integrated, Streamlyne analyzes millions of data points for your onshore and offshore processing facilities. Streamlyne can stream 10,000+ sensors per second to ensure scalability regardless of facility size.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="{{assets}}/img/circleicons/settings.png"/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-8">
+            <h3>Predictive Analytics</h3>
+            <p>
+              Streamlyne's technology helps managers and control room operators to predict current DCS alarms and sensor data to recognize critical events (off spec product, flaring, hydrates, plant shutdowns, pipeline leaks, etc.) before they happen.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="{{assets}}/img/circleicons/computer.png"/>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-8">
+            <h3>Cloud or On Premise</h3>
+            <p>
+              Streamlyne was built to harness the power and processing of the cloud. Our infrastructure is built on top on world leader, Amazon Web Services (AWS); however, we recognized that some companies prefer to installed on premise. Streamlyne can easily accommodate
+              both cloud and on premise installation.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="{{assets}}/img/circleicons/upload.png"/>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>Benefits &amp; Value</h1>
+
+        <div class="row">
+
+          <div class="col-md-6">
+            <img src="{{assets}}/img/circleicons/money.png"/>
+            <h3>Reduce Downtime</h3>
+            <p>
+              In today’s competitive climate, slight increases in production efficiency have dramatic impacts on revenue and profitability. Both large and small unplanned events cost millions of dollars annually. Streamlyne can help increase revenue and profits by reducing unplanned shutdowns and improving operations.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <img src="{{assets}}/img/circleicons/tools.png"/>
+            <h3>Operator Knowledge</h3>
+            <p>
+              Operator knowledge is now documented and built into each sensor alarm and our predictive analytic algorithms. Streamlyne ensures DCS systems gather experiential information from experienced employees so that decades of “know-how” simply doesn’t walk out the door and leave the company. A catalogue of knowledge is built to benefit new employees and help them do their jobs better.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <img src="{{assets}}/img/circleicons/caution.png"/>
+            <h3>Decrease Emissions &amp; Penalties</h3>
+            <p>
+              By providing diagnostic information, operators can act quickly and identify problems before they escalate. This decreases product waste, improves safety, and decrease overall emissions. Not only is this beneficial for the environment and surrounding communities but it decreases costly penalties.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <img src="{{assets}}/img/circleicons/traffic.png"/>
+            <h3>Increase Safety</h3>
+            <p>
+              Streamlyne’s capabilities will help empower control room operators with the ability to view upcoming critical situations and increases their decision making timeframe. Pre-emptively detecting events help improve safety as it avoids fast, reactive, and hesitant decisions that can lead to worker groups being put in harmful situations.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="about-section section sky_blue_bg colored">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>Team</h1>
+
+        TOOD: Fill in peeps later.
+
+      </div>
+    </div>
+  </div>
+</section>

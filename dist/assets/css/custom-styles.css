@@ -2,64 +2,121 @@
    Insert Your Custom Styles Below. All styles located in this file will
    override existing main.css stylesheets.
    ========================================================================== */
-
-   /*!
+/*!
     * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
     * Code licensed under the Apache License v2.0.
     * For details, see http://www.apache.org/licenses/LICENSE-2.0.
     */
 
-   body {
-       width: 100%;
-       height: 100%;
-   }
+body {
+  width: 100%;
+  height: 100%;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+@media(min-width:767px) {
+  .navbar {
+    padding: 20px 0;
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+  }
+  .navbar-transparent:not(.top-nav-collapse) {
+    background: transparent;
+    border: transparent;
+  }
+  .navbar:not(.top-nav-collapse) .nav>li>a {
+    color: white;
+    text-shadow: none;
+  }
+  .top-nav-collapse {
+    padding: 0;
+    /*background: rgba(248, 248, 248, 0.2);*/
+  }
+  /*.top-nav-collapse .navbar .nav>li>a {
+    color: #777777;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #ffffff;
+  }*/
 
-   html {
-       width: 100%;
-       height: 100%;
-   }
+  :not(.top-nav-collapse).navbar-default .navbar-brand {
+    color: white;
+  }
+  .navbar .nav>.active>a {
+    color: #555;
+    background-color: #e7e7e7;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    none: box-shadow:
+  }
+  nav.navbar .nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+.top-header {
+  /*font-size: 5rem;*/
+  line-height: 5rem;
+  padding: 1rem 2rem 1.5rem;
+  margin: 0 5rem;
 
-   @media(min-width:767px) {
-       .navbar {
-           padding: 20px 0;
-           -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-           -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-           transition: background .5s ease-in-out,padding .5s ease-in-out;
-       }
+  letter-spacing: -1px;
+  color: white;
+  background: rgba(0, 0, 0, 0.25);
+   -webkit-border-radius: .25rem;
+  -moz-border-radius: .25rem;
+   border-radius: .25rem;
 
-       .top-nav-collapse {
-           padding: 0;
-       }
-   }
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  min-height: 208px;
+}
 
-   /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
    The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
    of those sections to manage the look and feel of the site. */
 
-   .intro-section {
-       height: 100%;
-       padding-top: 150px;
-       text-align: center;
-       background: #fff;
-   }
+section {
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
+  background: #fff;
+}
+section.h3 {
+  text-align: left;
+}
+section div.row div {
+  margin-bottom: 2rem;
+}
+section p {
+  text-align: justify;
+}
+/*section:nth-child(odd) {
+  background: #eee;
+}*/
 
-   .about-section {
-       height: 100%;
-       padding-top: 150px;
-       text-align: center;
-       background: #eee;
-   }
+section div.row img {
+  margin-top: 1rem;
+}
+section.intro-section {
+  /*padding-top: 0px;*/
 
-   .services-section {
-       height: 100%;
-       padding-top: 150px;
-       text-align: center;
-       background: #fff;
-   }
+  background-image: url(/assets/img/Offshore_platform_Cropped.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
 
-   .contact-section {
-       height: 100%;
-       padding-top: 150px;
-       text-align: center;
-       background: #eee;
-   }
+address {
+  line-height: 3rem;
+}
+
+#footer ul.nav li a {
+  font-size: 0.5em;
+  position: fixed;
+  bottom: 1em;
+  right: 0;
+}

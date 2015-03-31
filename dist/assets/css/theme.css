@@ -1,4 +1,4 @@
-body {
+/*body {
   padding-top: 70px;
   padding-bottom: 30px;
 }
@@ -11,4 +11,96 @@ body {
 
 .theme-showcase > p > .btn {
   margin: 5px 0;
+}*/
+
+/* From Slack. Thanks! */
+
+body{width:100%;font-family:'Lato',sans-serif;color:#555459;font-size:1.5rem;line-height:2rem;font-weight:300;background:white;overflow-x:hidden;-webkit-transition:translate3d(0,0,0)}
+
+html, body, div {
+  -webkit-font-smoothing: antialiased;
 }
+
+h1,h2,h3{font-weight:300}
+h2{font-size:2.5rem;line-height:3rem;margin:0 0 3rem 0}
+h3{font-size:2rem;line-height:2.5rem;margin:0 0 1rem 0}
+
+
+.section.colored,.section.colored li{color:white;text-shadow:0 1px rgba(0,0,0,0.15)}
+.section.colored li.active{border-color:white}
+.section.colored{color:white !important}
+.section.full p{max-width:80%;margin:0 auto 1rem}
+.section.full h2{margin:0 auto}
+.quote{font-weight:500;margin:1.5rem 0rem 1rem 2rem;font-size:1.75rem;line-height:2.25rem;position:relative}
+.source{margin:0 0 0 2rem;color:#9e9ea6}
+
+.transparent{color:transparent !important}
+.neutral_white{color:#fff !important}
+.neutral_white_bg{background-color:#fff !important}
+.neutral_grey{color:#fbfbfa !important}
+.indifferent_grey{color:#555459 !important}
+.indifferent_grey_bg{background-color:#555459 !important}
+.charcoal_grey{color:#434245 !important}
+.subtle_silver{color:#9e9ea6 !important}
+.subtle_silver_bg{background-color:#9e9ea6 !important}
+.soft_grey{color:#e8e8e8 !important}
+.soft_grey_bg{background-color:#e8e8e8 !important}
+.severe_grey{color:#3d3c40 !important}
+.severe_grey_bg{background-color:#3d3c40 !important}
+.dull_grey{color:#8b898f !important}
+.dull_grey_bg{background-color:#8b898f !important}
+.cloud_silver{color:#babbbf !important}
+.cloud_silver_bg{background-color:#babbbf !important}
+.warm_white{color:#fbfaf8 !important}
+.warm_white_bg{background-color:#fbfaf8 !important}
+.cloud_white{color:#f2f2f5 !important}
+.cloud_white_bg{background-color:#f2f2f5 !important}
+.seafoam_green{color:#2ab27b !important}
+.seafoam_green_bg{background-color:#2ab27b !important}
+.clear_blue{color:#439fe0 !important}
+.clear_blue_bg{background-color:#439fe0 !important}
+.solid_blue{color:#2780f8 !important}
+.solid_blue_bg{background-color:#2780f8 !important}
+.slate_blue_bg{background-color:#3c4b5b !important}
+.candy_red{color:#eb4d5c !important}
+.candy_red_bg{background-color:#eb4d5c !important}
+.highlight_yellow_bg{background-color:#fffce0 !important}
+.mention_yellow_bg{background-color:#fff3b8 !important}
+.star_yellow{color:#fc0 !important}
+.star_yellow_bg{background-color:#fc0 !important}
+.yolk_orange{color:#edb431 !important}
+.yolk_orange_bg{background-color:#edb431 !important}
+.thrills_purple{color:#8d698a !important}
+.burnt_violet{color:#4d394b !important}
+.burnt_violet_bg{background-color:#4d394b !important}
+.ocean_teal{color:#4c9689 !important}
+.ocean_teal_bg{background-color:#4c9689 !important}
+.havana_blue{color:#2a80b9 !important}
+.havana_blue_bg{background-color:#2a80b9 !important}
+.pale_blue{color:#f1f7fa !important}
+.pale_blue_bg{background-color:#f1f7fa !important}
+.sky_blue{color:#439fe0 !important}
+.sky_blue_bg{background-color:#439fe0 !important}
+.slate_blue{color:#3c4b5b !important}
+.slate_blue_bg{background-color:#3c4b5b !important}
+.muddy_lilac{color:#937e91 !important}
+.muddy_lilac_bg{background-color:#937e91 !important}
+.moscow_red{color:#cb5234 !important}
+.moscow_red_on_hover:hover{color:#cb5234 !important}
+.moscow_red_bg{background-color:#cb5234 !important}
+.moscow_red_dark{color:#870000 !important}
+.moscow_red_dark_bg{background-color:#870000 !important}
+.mustard_yellow{color:#dfa941 !important}
+.mustard_yellow_bg{background-color:#dfa941 !important}
+.kelly_green{color:#36a64f !important}
+.kelly_green_dark{color:#257337 !important}
+.kelly_green_bg{background-color:#36a64f !important}
+.channel_page_blue{color:#2d9cf5 !important}
+.pin_orange{color:#ff876d !important}
+.dropbox_blue{color:#007ee5 !important}
+.dropbox_blue_bg{background-color:#007ee5 !important}
+.twitter_blue{color:#55acee !important}
+.twitter_blue_bg{background-color:#55acee !important}
+.gdrive_blue_bg{background-color:#4285f4 !important}
+.screenhero_blue{color:#1a9cdb !important}
+.screenhero_blue_bg{background-color:#1a9cdb !important}
