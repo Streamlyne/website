@@ -20,9 +20,6 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="{{assets}}/bower/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="{{assets}}/css/lava-theme.css">
-  <link rel="stylesheet" href="{{assets}}/css/main.css">
-  <link rel="stylesheet" href="{{assets}}/css/slabtext.css">
   <link rel="stylesheet" href="{{assets}}/css/custom-styles.css">
   <link rel="stylesheet" href="{{assets}}/css/dripicon-style.css">
   <link rel="stylesheet" href="{{assets}}/css/dripicon-webfont.css">
@@ -37,15 +34,14 @@
   <link rel="apple-touch-icon-precomposed" href="{{assets}}/apple-touch-icon-57-precomposed.png">
   <link rel="shortcut icon" href="{{assets}}/favicon.ico">
 
-  {{!--
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="{{assets}}/css/bootstrap.min.css">
 
     <!-- Bootstrap theme -->
-    <link href="{{assets}}/css/bootstrap-theme.min.css" rel="stylesheet">
+    {{!-- <link href="{{assets}}/css/bootstrap-theme.min.css" rel="stylesheet"> --}}
 
     <!-- Custom styles for this template -->
-    <link href="{{assets}}/css/theme.css" rel="stylesheet">
+    {{!-- <link href="{{assets}}/css/theme.css" rel="stylesheet"> --}}
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -53,28 +49,26 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
---}}
+
 </head>
 
-<body style="">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     {{> navbar-fixed-top }}
 
-    <div class="" role="main">
-
       {{> body }}
-
-    </div>
 
     {{> footer}}
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="{{assets}}/bower/jquery/dist/jquery.min.js"></script>
+    <script src="{{assets}}/bower/jquery.easing/js/jquery.easing.js"></script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{assets}}/bower/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="{{assets}}/bower/d3/d3.min.js"></script>
     <script src="{{assets}}/js/visualizations.js"></script>
+    <script src="{{assets}}/js/main.js"></script>
 
     <!-- Google Analyics -->
     <script>
