@@ -55,6 +55,11 @@ html {
     padding-top: 15px;
     padding-bottom: 15px;
   }
+
+  a.navbar-brand {
+    font-size: 24px;
+  }
+
 }
 .top-header {
   /*font-size: 5rem;*/
