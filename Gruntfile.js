@@ -134,7 +134,7 @@ module.exports = function(grunt) {
                     options: { gzip: true }
                 },
                 {
-                    src: 'dist/assets/js/*.js',
+                    src: 'dist/assets/js/*.{js,json}',
                     rel: path.basename(path.resolve(__dirname, 'dist')),
                     dest: '',
                     options: { gzip: true }
@@ -174,7 +174,38 @@ module.exports = function(grunt) {
                     rel: path.basename(path.resolve(__dirname, 'dist')),
                     dest: '',
                     options: { gzip: true }
+                },
+                {
+                    src: 'dist/assets/bower/lato/css/*.min.css',
+                    rel: path.basename(path.resolve(__dirname, 'dist')),
+                    dest: '',
+                    options: { gzip: true }
+                },
+                {
+                    src: 'dist/assets/bower/lato/font/**/*',
+                    rel: path.basename(path.resolve(__dirname, 'dist')),
+                    dest: '',
+                    options: { gzip: true }
+                },
+                {
+                    src: 'dist/assets/bower/jquery.easing/js/*.js',
+                    rel: path.basename(path.resolve(__dirname, 'dist')),
+                    dest: '',
+                    options: { gzip: true }
+                },
+                {
+                    src: 'dist/assets/bower/d3/*.min.js',
+                    rel: path.basename(path.resolve(__dirname, 'dist')),
+                    dest: '',
+                    options: { gzip: true }
+                },
+                {
+                    src: 'dist/assets/img/circleicons/*.png',
+                    rel: path.basename(path.resolve(__dirname, 'dist')),
+                    dest: '',
+                    options: { gzip: true }
                 }
+
             ]
         }
     }
