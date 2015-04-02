@@ -77,6 +77,10 @@ module.exports = function(grunt) {
     },
 
     assemble: {
+      options: {
+        helpers: ['handlebars-helper-include'],
+        includes: ['<%= config.src %>/templates/includes/*.hbs']
+      },
       pages: {
         options: {
           flatten: true,
