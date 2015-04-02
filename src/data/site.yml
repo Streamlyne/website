@@ -1,1 +1,31 @@
 title: Streamlyne
+
+sections:
+  - title: Intro
+    anchor: intro
+    page: page-intro
+    class: "intro-section"
+    hidden: true
+  - title: Product
+    anchor: product
+    page: page-product
+  - title: Analytics
+    anchor: analytics
+    page: page-analytics
+    class: "section contact-section cloud_white_bg"
+  - title: How It Works
+    anchor: how-it-works
+    page: page-how-it-works
+    class: "section contact-section slate_blue_bg colored"
+  - title: Benefits
+    anchor: benefits
+    page: page-benefits
+    class: "section contact-section"
+  - title: Team
+    anchor: team
+    page: page-team
+    class: "about-section section sky_blue_bg colored"
+  - title: Contact Us
+    anchor: contact
+    page: page-contact
+    class: "section"

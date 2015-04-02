@@ -32,6 +32,7 @@
     "assemble-contrib-permalinks": "*",
     "assemble-contrib-sitemap": "*",
     "assemble-contrib-toc": "*",
+    "handlebars-helper-include": "^0.2.0",
     "grunt-s3": "^0.2.0-alpha.3"
   },
   "licenses": [
