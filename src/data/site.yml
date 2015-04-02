@@ -25,6 +25,28 @@ sections:
     anchor: team
     page: page-team
     class: "about-section section sky_blue_bg colored"
+    bios:
+      - name: "Todd Murphy"
+        title: "CEO"
+        avatar: "img/todd_head.jpg"
+        # twitter: "murphytodd"
+        linkedin: "http://ca.linkedin.com/in/toddnmurphy/"
+        email: "todd@streamlyne.co"
+        # bio: "src/content/todd.md"
+      - name: "Glavin Wiechert"
+        title: "VP of Engineering"
+        avatar: "img/glavin_head.jpg"
+        # twitter: "GlavinW"
+        linkedin: "http://www.linkedin.com/in/glavin"
+        email: "glavin@streamlyne.co"
+        github: Glavin001
+        # bio: "src/content/glavin.md"
+      - name: "Jackie Howatt"
+        title: "VP of Customer Development"
+        avatar: "img/jackie_head.png"
+        # twitter: "jackiehowatt"
+        linkedin: "http://ca.linkedin.com/in/jackiehowatt"
+        email: "jackie@streamlyne.co"
   - title: Contact Us
     anchor: contact
     page: page-contact

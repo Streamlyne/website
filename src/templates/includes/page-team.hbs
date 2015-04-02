@@ -1,11 +1,75 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1>Team</h1>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h1>Team</h1>
+      <br/>
+      <br/>
 
-        TOOD: Fill in peeps later.
+      <div class="container">
+        <div class="row">
 
+          {{#each bios}}
+            <div class="col-lg-4 col-sm-6">
+
+              <div class="card hovercard">
+                <div class="cardheader">
+
+                </div>
+                <div class="avatar">
+                  <img alt="{{name}}" src="assets/{{avatar}}">
+                </div>
+                <div class="info">
+                  <div class="title">
+                    <a href="mailto:{{email}}">{{name}}</a>
+                  </div>
+                  <div class="desc">{{title}}</div>
+              </div>
+                <div class="bottom">
+
+                  {{#if twitter}}
+                  <a class="btn btn-link btn-twitter btn-large" href="https://twitter.com/{{twitter}}" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  {{/if}}
+
+                  {{#if gplus}}
+                  <a class="btn btn-link btn-large" rel="publisher" href="https://plus.google.com/+{{gplus}}" target="_blank">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                  {{/if}}
+
+                  {{#if facebook}}
+                  <a class="btn btn-link btn-large" rel="publisher" href="https://facebook.com/{{facebook}}" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                  {{/if}}
+
+                  {{#if linkedin}}
+                    <a class="btn btn-link btn-large" rel="publisher" href="{{linkedin}}" target="_blank">
+                      <i class="fa fa-linkedin"></i>
+                    </a>
+                  {{/if}}
+
+                  {{#if github}}
+                    <a class="btn btn-link btn-large" rel="publisher" href="https://github.com/{{github}}" target="_blank">
+                      <i class="fa fa-github"></i>
+                    </a>
+                  {{/if}}
+
+                  {{#if email}}
+                    <a class="btn btn-link btn-large" rel="publisher" href="mailto:{{email}}" target="_blank">
+                      <i class="fa fa-envelope-o"></i>
+                    </a>
+                  {{/if}}
+
+                </div>
+              </div>
+
+            </div>
+          {{/each}}
+
+        </div>
       </div>
     </div>
   </div>
