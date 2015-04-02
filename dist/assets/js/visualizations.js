@@ -28,26 +28,87 @@ var maxHeight = 300;
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  d3.json("assets/js/flare.json", function(error, flare) {
-    root = flare;
+  function isScrolledIntoView(elem)
+  {
+      var $elem = $(elem);
+      var $window = $(window);
+
+      var docViewTop = $window.scrollTop();
+      var docViewBottom = docViewTop + $window.height();
+
+      var elemTop = $elem.offset().top;
+      var elemBottom = elemTop + $elem.height();
+
+      return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+  }
+
+  // Toggle children on click.
+  function click(d) {
+    if (d.children) {
+      d._children = d.children;
+      d.children = null;
+    } else {
+      d.children = d._children;
+      d._children = null;
+    }
+    update(d);
+  }
+
+  d3.json("assets/js/analysis.json", function(error, data) {
+    root = data;
     root.x0 = height / 2;
     root.y0 = 0;
+
+    update(root);
 
     function collapse(d) {
       if (d.children) {
         d._children = d.children;
-        d._children.forEach(collapse);
         d.children = null;
+      }
+      update(d, function() {
+        // console.log('done collapse', d, arguments);
+        if (d._children) {
+          d._children.forEach(collapse);
+        }
+      });
+    }
+
+    function expand(d) {
+      if (d._children) {
+        d.children = d._children;
+        d._children = null;
+      }
+      update(d, function() {
+        // console.log('done expand', d, arguments);
+        if (d.children) {
+          d.children.forEach(expand);
+        }
+      });
+    }
+
+    function refresh() {
+      if (isScrolledIntoView("svg.tree-chart") ){
+        expand(root);
+        // console.log('show!', root);
+      } else {
+        collapse(root);
+        // console.log('hide', root);
       }
     }
 
-    root.children.forEach(collapse);
-    update(root);
+    $(window).scroll(refresh);
+    refresh();
+
   });
 
   d3.select(self.frameElement).style("height", maxHeight+'px');
 
-  function update(source) {
+  function update(source, cb) {
+
+    cb = cb || function() {
+      console.log('end', arguments);
+    };
 
     var nodeSize = function(d) {
       return d.value;
@@ -151,7 +212,8 @@ var maxHeight = 300;
     // Transition links to their new position.
     link.transition()
       .duration(duration)
-      .attr("d", diagonal);
+      .attr("d", diagonal)
+      .each('end', cb);
 
     // Transition exiting nodes to the parent's new position.
     link.exit().transition()
@@ -166,7 +228,8 @@ var maxHeight = 300;
           target: o
         });
       })
-      .remove();
+      .remove()
+      .each('end', cb);
 
     // Stash the old positions for transition.
     nodes.forEach(function(d) {
@@ -175,16 +238,5 @@ var maxHeight = 300;
     });
   }
 
-  // Toggle children on click.
-  function click(d) {
-    if (d.children) {
-      d._children = d.children;
-      d.children = null;
-    } else {
-      d.children = d._children;
-      d._children = null;
-    }
-    update(d);
-  }
 
 });

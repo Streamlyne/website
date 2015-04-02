@@ -1,0 +1,78 @@
+{
+  "name": "Off Spec",
+  "parent": "null",
+  "value": 10,
+  "type": "black",
+  "level": "red",
+  "children": [
+    {
+      "name": "PV123",
+      "parent": "Top Level",
+      "value": 15,
+      "type": "grey",
+      "level": "red",
+      "children": [
+        {
+          "name": "TI111",
+          "parent": "Level 2: A",
+          "value": 5,
+          "type": "steelblue",
+          "level": "orange"
+        },
+        {
+          "name": "FT456",
+          "parent": "Level 2: A",
+          "value": 5,
+          "type": "steelblue",
+          "level": "orange"
+        },
+        {
+          "name": "PT234",
+          "parent": "Level 2: A",
+          "value": 5,
+          "type": "steelblue",
+          "level": "orange"
+        },
+        {
+          "name": "TT432",
+          "parent": "PV123",
+          "value": 8,
+          "type": "steelblue",
+          "level": "red",
+          "children": [
+            {
+              "name": "TI07",
+              "parent": "TT432",
+              "value": 5,
+              "type": "steelblue",
+              "level": "orange"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sensor 1",
+      "parent": "Top Level",
+      "value": 10,
+      "type": "grey",
+      "level": "green",
+      "children":[
+        {
+          "name": "LM531",
+          "parent": "Level 2: A",
+          "value": 5,
+          "type": "steelblue",
+          "level": "orange"
+        },
+        {
+          "name": "PV199",
+          "parent": "Level 2: A",
+          "value": 8,
+          "type": "steelblue",
+          "level": "red"
+        }
+      ]
+    }
+  ]
+}
