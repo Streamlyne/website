@@ -107,7 +107,7 @@ var maxHeight = 300;
   function update(source, cb) {
 
     cb = cb || function() {
-      console.log('end', arguments);
+      // console.log('end', arguments);
     };
 
     var nodeSize = function(d) {
